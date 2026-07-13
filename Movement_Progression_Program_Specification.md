@@ -1,10 +1,10 @@
 # Movement Progression Program Specification
 
-## Version 0.9.5 — Master Consolidated Draft
+## Version 0.10 — Master Consolidated Draft
 
 ### Status
 
-Authoritative v0.9 Draft
+Authoritative v0.10 Draft
 
 ### Purpose
 
@@ -16,7 +16,7 @@ All future program materials, training resources, evaluation systems, software t
 
 This document is intended to preserve not only standards, but also the reasoning and design decisions that produced those standards.
 
-This consolidated draft integrates the v0.9 revisions, which formalize the Evaluator Competency Model and elevate the Evaluator level to Operationally Complete status.
+This v0.10 consolidation integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
 
 ---
 
@@ -88,6 +88,8 @@ Standards exist to:
 
 Standards do not exist to create hierarchy, exclusivity, status, or barriers.
 
+The value of a standard should be measured by its contribution to safety, consistency, and development.
+
 ## FP-006 — Demonstrated Competency Matters More Than Potential
 
 Candidates are evaluated based on demonstrated competency.
@@ -149,21 +151,6 @@ These risks are often invisible to inexperienced participants.
 
 Movement-specific training and evaluation are therefore required.
 
-## PP-002 — Responsibility Precedes Privilege
-
-Privileges are earned only after demonstrating readiness for the associated responsibilities.
-
-This principle applies at every level of progression.
-
-## PP-003 — Standards Protect People
-
-Standards exist to protect participants, not to create status or barriers.
-
-The value of a standard should be measured by its contribution to safety, consistency, and development.
-
-## PP-004 — Demonstrated Competency Matters More Than Potential
-
-Progression is based on what a candidate can demonstrate today, not what they may become in the future.
 
 ## PP-005 — Institutional Knowledge Must Be Preserved
 
@@ -188,6 +175,83 @@ The program should preserve:
 
 Future maintainers should be able to understand the intent behind standards.
 
+## Principle Consolidation Note
+
+PP-002, PP-003, and PP-004 were removed in v0.10 because they duplicated FP-004, FP-005, and FP-006. The Foundational Philosophy entries are authoritative. The identifiers PP-002 through PP-004 are retired and will not be reassigned.
+
+# Implementation Discoveries
+
+The following constitutional principles were not part of the original design. They were discovered and verified during the implementation of the Flyer and Leader Tiers. They are recorded here to distinguish between what the framework was designed to be and what the implementation proved it to be.
+
+## ID-001 — Dual Development Principle
+
+The Movement Progression Framework intentionally develops two parallel competencies:
+
+- Technical movement competency
+- Leadership judgment
+
+Neither technical ability nor judgment alone is sufficient for advancement.
+
+The framework deliberately develops both simultaneously through progressively increasing responsibility.
+
+## ID-002 — Progressive Responsibility Principle
+
+Responsibility is the primary developmental variable throughout the framework.
+
+Advancement reflects the demonstrated ability to responsibly exercise the privileges associated with each level rather than merely demonstrating technical proficiency.
+
+## ID-003 — Developmental Guardrails Principle
+
+Operational restrictions exist to serve both safety and development.
+
+Restrictions intentionally narrow the learning environment to reduce unnecessary complexity while specific competencies are developed.
+
+Operational restrictions are progressively removed only after the associated knowledge, judgment, and responsibility have been demonstrated.
+
+## ID-004 — Operational Freedom Principle
+
+Operational freedom increases only as demonstrated judgment becomes increasingly reliable.
+
+The framework intentionally transfers responsibility for operational decision-making from the specification to the individual as leadership competency matures.
+
+## ID-005 — Judgment Principle
+
+The ultimate objective of the Leadership Tier is not unrestricted operational freedom.
+
+The objective is the demonstrated ability to consistently exercise sound judgment when determining what is appropriate for the participants, conditions, and objectives of each movement jump.
+
+## ID-006 — Leadership Stewardship Principle
+
+Leadership within the Movement Progression Framework is an act of stewardship.
+
+The purpose of leadership is to create movement jumps that are safe, enjoyable, appropriately challenging, and developmentally valuable for every participant.
+
+Leadership exists to serve the participants rather than the leader.
+
+## ID-007 — Purposeful Complexity Principle
+
+Complexity is introduced only when it serves a clear developmental purpose.
+
+The framework intentionally treats complexity as a tool for learning, progression, and leadership development rather than as an objective in itself.
+
+## ID-008 — Stewardship Over Status Principle
+
+Advancement within the Movement Progression Framework recognizes increasing responsibility, demonstrated competency, and stewardship rather than personal status or technical accomplishment alone.
+
+The purpose of progression is to improve the quality, safety, and developmental value of movement jumps for everyone involved.
+
+## ID-009 — Evidence-Based Advancement Principle
+
+Advancement within the Movement Progression Framework is based upon demonstrated competency supported by sufficient evidence rather than assumptions, reputation, jump numbers, or self-assessment.
+
+The framework intentionally favors observable performance over perceived ability.
+
+## Framework Mission Statement
+
+The framework exists to systematically develop movement flyers into increasingly capable leaders through progressively increasing responsibility, sound judgment, and demonstrated competency.
+
+Every standard, requirement, restriction, and privilege within this specification serves that mission.
+
 # Responsibility Model
 
 Every level represents an increase in responsibility.
@@ -197,10 +261,10 @@ Every level represents an increase in responsibility.
 | Solo | Manage yourself |
 | Group | Manage your position within a group |
 | Lead 1 | Manage one other flyer |
-| Lead 2 | Manage a small group |
-| Lead 3 | Manage a larger group |
-| Lead 4 | Manage a complex group |
-| Evaluator | Develop flyers |
+| Lead 2 | Manage a formation |
+| Lead 3 | Introduce and manage complexity appropriately |
+| Lead 4 | Exercise sound judgment while stewarding the entire movement jump experience |
+| Evaluator | Develop people while protecting standards |
 | Examiner | Develop evaluators and protect standards |
 
 This responsibility ladder should guide future level design.
@@ -1119,6 +1183,28 @@ The purpose is consistency.
 
 Evaluator guidance preserves institutional knowledge.
 
+# Skill Formatting Standard
+
+Skills are formatted identically across all levels so that specification content can be parsed reliably by software.
+
+The canonical structure is:
+
+- `## Skills` — the skills section of a level.
+- `### Category Name` — an optional grouping heading. A category heading never matches the skill identifier pattern.
+- `#### LEVEL-DOM-NNN` — a skill identifier. Skill identifiers always appear at heading level four and always match the pattern `PREFIX-DOMAIN-NUMBER` (for example, `LEAD2-FRM-001`).
+- The requirement statement appears as the first paragraph following the skill identifier.
+- `##### Student Explanation` — Layer 2 of the requirement.
+- `##### Evaluator Guidance` — Layer 3 of the requirement.
+- `Duplication Audit: <classification>` — a single plain-text line at the end of the skill recording the requirement's duplication classification (for example, `Duplication Audit: 🟢 New`).
+
+Parsing rules:
+
+- A skill is identified exclusively by its heading pattern, never by position.
+- Everything between one skill identifier heading and the next heading of level four or higher belongs to that skill.
+- Categories are optional. Skills may appear directly beneath the Skills section.
+
+This standard is normative. Derivative software should reject content that deviates from it.
+
 # Requirement Preservation Model
 
 Requirements are not merely standards.
@@ -1398,7 +1484,7 @@ Develop safe movement participants.
 
 ## Status
 
-Implemented
+Operationally Complete
 
 ## Development Theme
 
@@ -1473,11 +1559,11 @@ The candidate must understand:
 
 ### Heading Skills
 
-### SOLO-HDG-001
+#### SOLO-HDG-001
 
 Determine the correct heading while planning the jump.
 
-#### Student Explanation
+##### Student Explanation
 
 Movement flight begins with planning.
 
@@ -1485,43 +1571,39 @@ Selecting the wrong heading can create separation conflicts, deployment conflict
 
 Safe movement flight requires understanding where the group should travel relative to jump run.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should be able to independently determine the correct heading and explain the reasoning behind the decision.
 
 The evaluator should assess understanding rather than memorized answers.
 
-Duplication Audit:
+Duplication Audit: 🟢 New
 
-🟢 New
-
-### SOLO-HDG-002
+#### SOLO-HDG-002
 
 Identify and establish the planned heading after exit.
 
-#### Student Explanation
+##### Student Explanation
 
 Knowing the correct heading is insufficient.
 
 The flyer must also be able to acquire that heading after exit.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate the ability to orient correctly after exit and establish the intended line of flight.
 
-Duplication Audit:
+Duplication Audit: 🟢 New
 
-🟢 New
-
-### SOLO-HDG-003
+#### SOLO-HDG-003
 
 Maintain the planned heading throughout the jump.
 
-#### Student Explanation
+##### Student Explanation
 
 Maintaining heading is essential to preserving separation and predictable flight paths.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The evaluator should observe whether the candidate can remain on the intended heading throughout flight.
 
@@ -1529,11 +1611,9 @@ Minor corrections may occur.
 
 Large heading deviations should be investigated.
 
-Duplication Audit:
+Duplication Audit: 🟢 New
 
-🟢 New
-
-## Heading Skills Philosophy
+### Heading Skills Philosophy
 
 Safe movement flight requires three separate competencies:
 
@@ -1549,84 +1629,84 @@ This progression can be summarized as:
 
 Plan → Acquire → Maintain
 
-## Flight Skills
+### Flight Skills
 
-### SOLO-FLT-001
+#### SOLO-FLT-001
 
 Stable exit.
 
-#### Student Explanation
+##### Student Explanation
 
 Movement flight begins immediately after exit.
 
 A stable exit establishes predictability and control.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate controlled exits appropriate for introductory movement flight.
 
-### SOLO-FLT-002
+#### SOLO-FLT-002
 
 Stable belly tracking position.
 
-#### Student Explanation
+##### Student Explanation
 
 A stable tracking position provides predictable movement and control.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate consistent body position and control.
 
-### SOLO-FLT-003
+#### SOLO-FLT-003
 
 Follow the planned line of flight.
 
-#### Student Explanation
+##### Student Explanation
 
 Movement should follow planning.
 
 Improvisation should not replace flight discipline.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Observe whether the candidate remains committed to the planned flight path.
 
-### SOLO-FLT-004
+#### SOLO-FLT-004
 
 Deploy in the intended area.
 
-#### Student Explanation
+##### Student Explanation
 
 Deployment location is a critical safety outcome.
 
 Movement planning should result in safe deployment locations.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Observe deployment awareness, planning, and execution.
 
-## Learning Skills
+### Learning Skills
 
-### SOLO-LRN-001
+#### SOLO-LRN-001
 
 Participate in a meaningful debrief.
 
-#### Student Explanation
+##### Student Explanation
 
 Learning accelerates when performance is reviewed and discussed.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate willingness to engage in debrief discussion and apply feedback.
 
 
 ### Risk Management Skills
 
-### SOLO-RSK-001
+#### SOLO-RSK-001
 
 Recognize when a planned movement jump is no longer appropriate and modify or abandon the plan.
 
-#### Student Explanation
+##### Student Explanation
 
 Planning does not end when the jump is planned.
 
@@ -1634,14 +1714,11 @@ Conditions may change between planning and execution. A Solo flyer remains respo
 
 Changing or abandoning a plan is not failure. Continuing with an inappropriate plan is failure.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate understanding of situations that may require plan modification or abandonment and appropriate use of alternate plans.
 
-Duplication Audit:
-
-🟢 New
-
+Duplication Audit: 🟢 New
 
 ## Evaluation Criteria
 
@@ -1812,13 +1889,13 @@ Acquire → Maintain → Recognize → Recover
 
 Safely approach and establish the assigned slot.
 
-#### Student Explanation
+##### Student Explanation
 
 Participation in a movement group begins with safely entering the formation.
 
 A Group flyer must be able to approach the leader and establish their assigned position without creating unnecessary risk for themselves or others.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 The candidate should demonstrate the ability to approach the formation in a controlled and predictable manner.
 
@@ -1835,11 +1912,11 @@ Duplication Audit: 🟢 New
 
 Maintain the assigned slot throughout the jump.
 
-#### Student Explanation
+##### Student Explanation
 
 A Group flyer must remain in position throughout the jump so that the formation remains predictable and the leader's plan can be executed safely.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Demonstrates the ability to maintain position relative to the leader throughout the jump.
 
@@ -1849,11 +1926,11 @@ Duplication Audit: 🟢 New
 
 Maintain appropriate separation while occupying the assigned slot.
 
-#### Student Explanation
+##### Student Explanation
 
 A Group flyer must maintain sufficient separation to allow predictable movement and avoid unnecessary collision risk.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Maintains consistent and appropriate spacing throughout the jump.
 
@@ -1863,11 +1940,11 @@ Duplication Audit: 🟢 New
 
 Remain within the assigned quadrant throughout the jump.
 
-#### Student Explanation
+##### Student Explanation
 
 Remaining within the assigned quadrant reduces crossing conflicts and helps other participants anticipate movement.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Demonstrates consistent quadrant discipline.
 
@@ -1877,11 +1954,11 @@ Duplication Audit: 🟢 New
 
 Avoid crossing the center line while approaching or occupying the assigned slot.
 
-#### Student Explanation
+##### Student Explanation
 
 Crossing the center line creates unnecessary unpredictability and may place a flyer in conflict with other participants.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Demonstrates consistent center-line discipline.
 
@@ -1891,11 +1968,11 @@ Duplication Audit: 🟢 New
 
 Avoid passing the leader during approach or flight.
 
-#### Student Explanation
+##### Student Explanation
 
 Passing the leader creates unnecessary unpredictability and may compromise the structure of the jump.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Remains behind the leader and maintains appropriate positional discipline.
 
@@ -1907,11 +1984,11 @@ Duplication Audit: 🟢 New
 
 Recognize when the assigned position has been lost.
 
-#### Student Explanation
+##### Student Explanation
 
 Position loss is not itself a failure. Failure to recognize position loss can create unnecessary risk.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 Demonstrates awareness of relationship to the formation and recognizes meaningful deviations from the assigned position.
 
@@ -1921,11 +1998,11 @@ Duplication Audit: 🟢 New
 
 Respond appropriately when unexpectedly out of position.
 
-#### Student Explanation
+##### Student Explanation
 
 Loss of position does not remove responsibility.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 - Maintains awareness of the formation.
 - Continues to monitor the group's movement.
@@ -1943,11 +2020,11 @@ Duplication Audit: 🟢 New
 
 Execute assigned breakoff procedures.
 
-#### Student Explanation
+##### Student Explanation
 
 Breakoff is a coordinated group activity.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 - Executes breakoff at the assigned time.
 - Maintains the assigned breakoff direction.
@@ -2026,14 +2103,54 @@ Eligible to pursue:
 
 ## Purpose
 
-Develop safe movement jump leaders.
+Develop safe, capable movement jump leaders through progressively increasing responsibility.
+
+## Leadership Defined
+
+Leadership within the Movement Progression Framework is the responsible application of movement knowledge, judgment, communication, and decision-making in service of other participants.
+
+Leadership is distinct from flying ability. A technically excellent flyer is not necessarily a capable leader.
+
+## Tier Architecture
+
+The Leadership Tier intentionally develops increasingly capable movement leaders by progressively increasing responsibility while gradually transferring operational decision-making from the framework to the individual leader.
+
+The progression follows a single developmental sequence:
+
+1. Responsibility increases at every level.
+2. Judgment develops through the repeated exercise of that responsibility.
+3. Operational freedom expands only as demonstrated judgment becomes increasingly reliable.
+4. Complexity is introduced only when it serves that development.
+
+Each level answers a distinct developmental question:
+
+| Level | Central Question |
+| --- | --- |
+| Lead 1 | Can I lead? |
+| Lead 2 | Can I lead consistently? |
+| Lead 3 | Can I introduce complexity appropriately? |
+| Lead 4 | Can I consistently exercise sound judgment without external guardrails? |
+
+## Developmental Guardrails
+
+The operational restrictions within the Leadership Tier are developmental tools, not merely safety limits.
+
+Each restriction intentionally narrows the learning environment while a specific leadership competency is developed. Restrictions are progressively removed as the associated knowledge, judgment, and responsibility are demonstrated, until Lead 4, where the framework transfers operational decision-making entirely to the leader.
+
+A restriction should never be removed from this tier without identifying the developmental objective that would disappear with it.
+
+## Tier Purpose Statement
+
+The Leadership Tier does not exist to produce increasingly advanced movement flyers.
+
+It exists to develop leaders capable of consistently exercising sound judgment while creating safe, enjoyable, and developmentally valuable movement jumps.
 
 
 # Lead 1
 
 ## Status
 
-Operationally Complete (Draft)
+Operationally Complete
 
 ## Development Theme
 
@@ -2058,6 +2175,12 @@ Develop the ability to safely plan, organize, lead, adapt, and debrief movement 
 ## Responsibility
 
 Manage one other flyer.
+
+## Prerequisites
+
+Required
+
+- Group Certification
 
 A Lead 1 flyer is responsible for the planning, organization, execution, and review of movement jumps involving one follower.
 
@@ -2136,13 +2259,77 @@ When multiple safe options exist, simplicity is often the preferred choice.
 
 Determine whether a proposed jump is appropriate for the participants involved.
 
+##### Student Explanation
+
+Leadership begins before the jump is planned.
+
+A leader must evaluate whether the proposed jump is appropriate for the experience, competency, and readiness of the participants involved.
+
+Not every jump should happen.
+
+A responsible leader is willing to modify or cancel a plan when necessary.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to evaluate proposed jumps and identify situations where modifications or cancellation may be appropriate.
+
+The evaluator should assess judgment rather than risk avoidance.
+
+The candidate should demonstrate the ability to balance development opportunities with safety considerations.
+
+Duplication Audit: 🟢 New
+
 #### LEAD1-RSK-002
 
 Recognize when a proposed jump exceeds Lead 1 authority or personal competency.
 
+##### Student Explanation
+
+Leadership includes understanding limitations.
+
+A responsible leader recognizes when a jump requires greater experience, authority, or expertise than they currently possess.
+
+The ability to say "no" is a leadership skill.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate understanding of Lead 1 operational boundaries.
+
+The evaluator should verify that the candidate can identify situations requiring a higher level of leadership involvement.
+
+Duplication Audit: 🟢 New
+
 #### LEAD1-RSK-003
 
 Modify or abandon a plan affecting another participant when conditions require.
+
+##### Student Explanation
+
+Planning does not end when the briefing is complete.
+
+Conditions may change between planning and execution.
+
+A responsible leader continually evaluates whether the planned jump remains appropriate and is willing to modify or abandon the plan when necessary.
+
+Changing the plan is not failure.
+
+Proceeding with an unsafe plan is failure.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate understanding of situations that may require plan modification or abandonment.
+
+Examples may include:
+
+- weather conditions
+- cloud cover
+- aircraft considerations
+- participant readiness
+- operational changes
+
+The evaluator should verify that the candidate understands when a planned movement jump should be modified, replaced, or cancelled.
+
+Duplication Audit: 🟢 New
 
 ### Planning Skills
 
@@ -2150,9 +2337,37 @@ Modify or abandon a plan affecting another participant when conditions require.
 
 Create a safe and appropriate movement plan for one follower.
 
+##### Student Explanation
+
+A leader is responsible for creating a plan that supports both safety and learning.
+
+The objective is not complexity.
+
+The objective is appropriate development.
+
+##### Evaluator Guidance
+
+The candidate should create movement plans that are appropriate for the experience and capabilities of the follower.
+
+The evaluator should assess planning quality, simplicity, and appropriateness.
+
+Duplication Audit: 🟢 New
+
 #### LEAD1-PLN-002
 
 Create breakoff procedures and deployment plans appropriate for the jump.
+
+##### Student Explanation
+
+Movement planning extends beyond freefall.
+
+Safe leaders consider the entire jump, including deployment and canopy considerations.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to incorporate deployment and separation planning into the overall jump plan.
+
+Duplication Audit: 🔵 Expanded from Solo
 
 ### Briefing Skills
 
@@ -2160,9 +2375,35 @@ Create breakoff procedures and deployment plans appropriate for the jump.
 
 Conduct a complete pre-jump briefing.
 
+##### Student Explanation
+
+A good plan is ineffective if it is not communicated clearly.
+
+A briefing should provide participants with the information necessary to safely execute the jump.
+
+##### Evaluator Guidance
+
+The candidate should conduct organized, complete, and understandable briefings.
+
+The evaluator should assess both content and communication quality.
+
+Duplication Audit: 🟢 New
+
 #### LEAD1-BRF-002
 
 Verify follower understanding before boarding the aircraft.
+
+##### Student Explanation
+
+Communication is not complete until understanding is confirmed.
+
+Leaders are responsible for identifying misunderstandings before the jump begins.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate methods for confirming understanding rather than assuming understanding.
+
+Duplication Audit: 🟢 New
 
 ### Leadership Execution Skills
 
@@ -2170,9 +2411,37 @@ Verify follower understanding before boarding the aircraft.
 
 Demonstrate ownership of foundational movement skills while leading a follower.
 
+##### Student Explanation
+
+Leadership requires attention.
+
+A leader who must devote significant mental effort to basic flight tasks has less attention available for planning execution, follower awareness, separation management, and risk management.
+
+For this reason, leaders must demonstrate ownership rather than mere competency.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate comfort, consistency, and intentionality in foundational movement skills while simultaneously carrying leadership responsibilities.
+
+The evaluator should assess whether the candidate appears capable of directing attention toward the follower and the overall jump rather than exclusively toward personal flight performance.
+
+Duplication Audit: 🔵 Expanded from Group
+
 #### LEAD1-LDR-002
 
 Lead the jump in accordance with the established plan.
+
+##### Student Explanation
+
+Leaders are responsible for executing the plan they create.
+
+Changes should be deliberate and justified rather than reactive or impulsive.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate consistent leadership throughout the jump and maintain responsibility for the execution of the planned objectives.
+
+Duplication Audit: 🟢 New
 
 ### Debrief Skills
 
@@ -2180,9 +2449,33 @@ Lead the jump in accordance with the established plan.
 
 Conduct a meaningful post-jump debrief.
 
+##### Student Explanation
+
+Learning continues after the jump.
+
+A leader should be able to identify strengths, improvement opportunities, and lessons learned.
+
+##### Evaluator Guidance
+
+The candidate should conduct organized and constructive debriefs focused on development rather than criticism.
+
+Duplication Audit: 🟢 New
+
 #### LEAD1-DBR-002
 
 Identify personal leadership improvements resulting from the jump.
+
+##### Student Explanation
+
+Leaders are responsible for their own development as well as the development of others.
+
+Effective leaders acknowledge mistakes, seek feedback, and continuously improve.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to critically evaluate their own leadership performance and identify meaningful improvement opportunities.
+
+Duplication Audit: 🟢 New
 
 ## Leadership Responsibility
 
@@ -2244,12 +2537,11 @@ Leadership includes the willingness to have uncomfortable conversations when saf
 - Debriefing.
 
 
-
 # Lead 2
 
 ## Status
 
-Operationally Complete (Draft)
+Operationally Complete
 
 ## Development Theme
 
@@ -2272,6 +2564,12 @@ Develop the ability to safely plan, organize, lead, adapt, and debrief movement 
 ## Responsibility
 
 Manage a formation.
+
+## Prerequisites
+
+Required
+
+- Lead 1 Certification
 
 ## Knowledge
 
@@ -2349,49 +2647,183 @@ Lead 2 offers enough variation to remain engaging while remaining narrow enough 
 
 ## Skills
 
-### LEAD2-LDR-001
+#### LEAD2-LDR-001
 
 Demonstrate ownership of Lead 1 leadership responsibilities while leading a formation.
 
-### LEAD2-FRM-001
+##### Student Explanation
+
+Lead 2 leaders should no longer devote significant mental effort to the mechanics of leading a single follower.
+
+Planning, briefing, execution, adaptation, and debriefing should occur naturally and consistently, allowing attention to be directed toward formation management.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate comfort and consistency in the leadership process while simultaneously managing multiple followers.
+
+The evaluator should assess whether the candidate appears capable of focusing on the formation as a whole rather than becoming consumed by individual leadership tasks.
+
+Duplication Audit: 🔵 Expanded from Lead 1
+
+#### LEAD2-FRM-001
 
 Execute a stable, controlled formation exit that supports predictable formation development.
 
-### LEAD2-FRM-002
+##### Student Explanation
+
+Formation leadership begins at the exit.
+
+The leader should establish a stable, predictable platform that allows followers to safely acquire and maintain their assigned positions.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate stable exits that consistently support formation development.
+
+The evaluator should assess predictability, stability, and appropriateness rather than aggressiveness or speed.
+
+Duplication Audit: 🔵 Expanded from Lead 1
+
+#### LEAD2-FRM-002
 
 Establish and maintain an appropriate pace for the formation.
 
-### LEAD2-FRM-003
+##### Student Explanation
+
+The leader establishes the tempo of the jump.
+
+Changes in speed, heading, and pitch should support the formation and allow followers to remain engaged without excessive corrections.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to manage formation pace throughout the jump.
+
+The evaluator should assess whether the leader creates a predictable and manageable environment for followers.
+
+Duplication Audit: 🟢 New
+
+#### LEAD2-FRM-003
 
 Demonstrate measured, progressive, and controlled speed changes.
 
-### LEAD2-FRM-004
+##### Student Explanation
+
+Speed changes should be deliberate and predictable.
+
+Abrupt changes increase workload for followers and may reduce formation predictability.
+
+##### Evaluator Guidance
+
+The evaluator should assess smoothness, consistency, and control rather than magnitude of speed change.
+
+Duplication Audit: 🔵 Expanded from Solo and Lead 1
+
+#### LEAD2-FRM-004
 
 Demonstrate measured, progressive, and controlled pitch changes.
 
-### LEAD2-COM-001
+##### Student Explanation
+
+Pitch changes should support formation objectives while maintaining predictability for followers.
+
+##### Evaluator Guidance
+
+The evaluator should assess whether pitch changes are deliberate, controlled, and appropriate for the formation.
+
+Duplication Audit: 🔵 Expanded from Solo and Lead 1
+
+#### LEAD2-COM-001
 
 Use physical keys to communicate planned formation actions.
 
-### LEAD2-COM-002
+##### Student Explanation
+
+Formation leaders should communicate significant actions before they occur.
+
+Physical keys help followers anticipate and respond appropriately.
+
+##### Evaluator Guidance
+
+The candidate should consistently use recognizable physical keys before executing planned actions.
+
+Duplication Audit: 🟢 New
+
+#### LEAD2-COM-002
 
 Communicate heading changes before execution.
 
-### LEAD2-MGT-001
+##### Student Explanation
+
+Heading changes should be deliberate and predictable.
+
+Followers should understand both that a heading change is occurring and when it will occur.
+
+##### Evaluator Guidance
+
+The evaluator should assess communication quality, timing, and predictability.
+
+Duplication Audit: 🟢 New
+
+#### LEAD2-MGT-001
 
 Maintain awareness of both followers throughout the jump.
 
-### LEAD2-MGT-002
+##### Student Explanation
+
+Formation leaders are responsible for the entire formation, not a single participant.
+
+The leader should continuously monitor follower position and formation development.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate awareness of both followers and make appropriate adjustments when necessary.
+
+Duplication Audit: 🔵 Expanded from Lead 1
+
+#### LEAD2-MGT-002
 
 Make appropriate speed and pitch adjustments to support formation cohesion.
 
-### LEAD2-EXE-001
+##### Student Explanation
+
+Leaders should help the formation remain together through deliberate and measured adjustments.
+
+Corrections should be appropriate and not excessive.
+
+##### Evaluator Guidance
+
+The evaluator should assess judgment, restraint, and effectiveness rather than frequency of corrections.
+
+Duplication Audit: 🟢 New
+
+#### LEAD2-EXE-001
 
 Conduct a progressive breakoff appropriate for a three-person formation.
 
-### LEAD2-EXE-002
+##### Student Explanation
+
+Breakoff procedures should support predictable separation and safe deployment.
+
+##### Evaluator Guidance
+
+The evaluator should assess planning, execution, and predictability of the breakoff.
+
+Duplication Audit: 🔵 Expanded from Group and Lead 1
+
+#### LEAD2-EXE-002
 
 Lead the formation to the planned deployment area.
+
+##### Student Explanation
+
+Movement leadership includes responsibility for where the formation opens.
+
+Leaders should manage the jump so that deployment occurs in an appropriate location relative to other groups and the drop zone.
+
+##### Evaluator Guidance
+
+The evaluator should assess planning, awareness, and execution.
+
+Duplication Audit: 🔵 Expanded from Lead 1
 
 ## Evaluation Criteria
 
@@ -2478,7 +2910,7 @@ The result is a movement jump that is easier for followers to understand, easier
 
 ## Status
 
-Operationally Complete (Draft)
+Operationally Complete
 
 ## Development Theme
 
@@ -2505,6 +2937,12 @@ Develop the ability to design, plan, organize, lead, and debrief dynamic movemen
 ## Responsibility
 
 Introduce and manage complexity appropriately.
+
+## Prerequisites
+
+Required
+
+- Lead 2 Certification
 
 ## Knowledge
 
@@ -2556,47 +2994,47 @@ Introduce and manage complexity appropriately.
 
 ## Skills
 
-### LEAD3-LDR-001
+#### LEAD3-LDR-001
 
 Demonstrate ownership of Lead 2 leadership responsibilities while leading dynamic movement jumps.
 
-### LEAD3-PLN-001
+#### LEAD3-PLN-001
 
 Design dynamic movement jumps appropriate to participant competency.
 
-### LEAD3-PLN-002
+#### LEAD3-PLN-002
 
 Sequence dynamic movement elements into a logical and executable dive flow.
 
-### LEAD3-PLN-003
+#### LEAD3-PLN-003
 
 Match complexity to participant capability and developmental objectives.
 
-### LEAD3-RSK-001
+#### LEAD3-RSK-001
 
 Identify and mitigate risks associated with dynamic movement jumps.
 
-### LEAD3-COM-001
+#### LEAD3-COM-001
 
 Effectively brief dynamic movement jumps involving multiple transitions, movement elements, and participant responsibilities.
 
-### LEAD3-MGT-001
+#### LEAD3-MGT-001
 
 Recognize productive struggle versus non-productive struggle.
 
-### LEAD3-EXE-001
+#### LEAD3-EXE-001
 
 Lead movement jumps involving back flying and back tracking.
 
-### LEAD3-EXE-002
+#### LEAD3-EXE-002
 
 Lead movement jumps involving planned orientation changes.
 
-### LEAD3-EXE-003
+#### LEAD3-EXE-003
 
 Lead movement jumps involving significant heading changes.
 
-### LEAD3-EXE-004
+#### LEAD3-EXE-004
 
 Lead movement jumps involving advanced formation maneuvers.
 
@@ -2637,6 +3075,31 @@ Lead movement jumps involving advanced formation maneuvers.
 
 - Lead 4
 
+## Duplication Audit
+
+### Expanded Competencies
+
+- Leadership responsibility.
+- Participant assessment.
+- Movement planning.
+- Briefing.
+- Communication.
+- Formation management.
+- Risk assessment.
+- Debriefing.
+
+### New Competencies
+
+- Purposeful complexity assessment.
+- Complexity-based participant matching.
+- Dynamic movement design.
+- Layered plan construction.
+- Complexity risk management.
+- Complexity-appropriate briefing.
+- Staged breakoff design and management.
+- In-flight complexity reduction.
+- Dynamic element execution.
+
 ## Defining Question
 
 Can I introduce complexity appropriately?
@@ -2644,11 +3107,292 @@ Can I introduce complexity appropriately?
 
 # Lead 4
 
-Status: Not Yet Defined
+## Status
+
+Operationally Complete
+
+## Development Theme
+
+Demonstrated Discernment
+
+## Intent Statement
+
+Lead 4 represents the culmination of the Leadership Tier.
+
+A Lead 4 flyer has demonstrated the judgment, maturity, and leadership necessary to safely plan, organize, lead, and debrief movement jumps without relying on externally imposed operational guardrails.
+
+Rather than expanding a leader's technical toolbox, Lead 4 demonstrates that the leader has internalized the principles, responsibilities, and judgment developed throughout the entire Leadership Tier.
+
+A Lead 4 flyer understands how to design movement jumps appropriate for the participants, the conditions, and the developmental objectives while balancing safety, enjoyment, challenge, and progression.
+
+The defining challenge of Lead 4 is not introducing greater complexity.
+
+The defining challenge is consistently exercising sound judgment when no external boundaries dictate the correct decision.
+
+## Core Development Goal
+
+Demonstrate the ability to independently exercise sound judgment while planning, organizing, leading, and evaluating movement jumps of any appropriate complexity.
+
+## Responsibility
+
+Exercise sound judgment while stewarding the entire movement jump experience.
+
+## Prerequisites
+
+Required
+
+- Lead 3 Certification
+
+## Privilege
+
+A Lead 4 flyer may independently determine the appropriate structure, complexity, and execution of movement jumps based upon participant competency, environmental conditions, and operational considerations.
+
+## What This Level Unlocks
+
+- Independent Leadership
+
+
+## Philosophy
+
+Leadership ultimately becomes a matter of judgment.
+
+The progression system intentionally provides operational boundaries throughout the Leadership Tier to help leaders develop sound decision-making.
+
+Lead 4 represents the point at which those boundaries have been internalized.
+
+A successful Lead 4 flyer no longer depends upon the progression system to determine what is appropriate.
+
+Instead, they consistently demonstrate the ability to establish appropriate boundaries for themselves and for those they lead.
+
+
+### Demonstrated Discernment
+
+A Lead 4 flyer demonstrates the ability to consistently distinguish between what is possible and what is appropriate.
+
+Discernment requires balancing numerous competing considerations, including participant competency, experience, environmental conditions, operational risk, developmental objectives, and overall jump quality.
+
+The correct decision is not always the most exciting, the most difficult, or the most technically impressive.
+
+The correct decision is the one most likely to produce a safe, successful, enjoyable, and developmentally valuable movement jump.
+
+
+### Stewardship
+
+A successful Lead 4 flyer understands that leadership is ultimately an act of stewardship.
+
+The objective is not to showcase personal ability.
+
+The objective is to create an environment where participants are safe, appropriately challenged, enjoy the experience, and continue progressing.
+
+Stewardship requires accepting responsibility not only for the execution of the jump, but for the overall experience of every participant.
+
+
+### Experimentation and Innovation
+
+A Lead 4 flyer recognizes that meaningful progression within movement flight requires experimentation, creativity, and innovation.
+
+Experimentation should be intentional, appropriately planned, and carefully managed.
+
+A successful Lead 4 flyer understands when experimentation creates valuable learning opportunities and when it introduces unnecessary risk.
+
+Innovation is encouraged.
+
+Recklessness is not.
+
+
+## This Level Is About
+
+- Demonstrated judgment
+- Internalized leadership
+- Independent decision-making
+- Stewardship
+- Discernment
+- Appropriate experimentation
+- Balancing competing priorities
+- Integrating all previous leadership competencies
+- Developing others through excellent leadership
+- Consistently producing safe, enjoyable, and successful movement jumps
+
+
+## This Level Is Not About
+
+- Unlimited complexity
+- Showing off
+- Personal status
+- Ego
+- Seeking recognition
+- Flying the most difficult jump possible
+- Ignoring established principles because restrictions have been removed
+- Believing there is nothing left to learn
+
+
+## Knowledge
+
+### Integrated Leadership
+
+- Integration of all Leadership Tier competencies.
+- Appropriate application of previous progression knowledge.
+- Internalized operational judgment.
+
+### Risk Prioritization
+
+- Understanding relative risk.
+- Weighing competing operational considerations.
+- Recognizing how changes affect overall jump risk.
+- Adjusting plans accordingly.
+
+### Participant Stewardship
+
+- Matching jump design to participant competency.
+- Managing mixed-experience groups.
+- Supporting participant progression.
+- Recognizing individual developmental needs.
+
+### Operational Design
+
+- Designing movement jumps appropriate for participants and conditions.
+- Establishing appropriate operational boundaries.
+- Managing experimentation.
+- Managing complexity without unnecessary restrictions.
+
+### Communication
+
+- Clear, direct, and confident communication.
+- Explaining decisions.
+- Managing participant expectations.
+- Building trust through communication.
+
+### Continuous Improvement
+
+- Learning from experience.
+- Encouraging constructive feedback.
+- Remaining teachable.
+- Continuing personal development.
+
+
+## Skills
+
+#### LEAD4-LDR-001
+
+Demonstrate consistent sound judgment across all aspects of movement leadership.
+
+#### LEAD4-LDR-002
+
+Independently establish appropriate operational boundaries.
+
+#### LEAD4-PLN-001
+
+Design movement jumps appropriate for participants, conditions, and developmental objectives.
+
+#### LEAD4-PLN-002
+
+Safely incorporate experimentation and innovation when appropriate.
+
+#### LEAD4-RSK-001
+
+Continuously evaluate and prioritize operational risks throughout planning and execution.
+
+#### LEAD4-COM-001
+
+Communicate complex movement plans clearly, accurately, and confidently.
+
+#### LEAD4-MGT-001
+
+Lead movement jumps involving participants of varying experience levels.
+
+#### LEAD4-MGT-002
+
+Adjust planning and leadership style to support participant development.
+
+#### LEAD4-DEV-001
+
+Provide accurate, constructive feedback that promotes continued progression.
+
+#### LEAD4-PRO-001
+
+Demonstrate humility, professionalism, and commitment to continual learning.
+
+
+## Evaluation Criteria
+
+1. Demonstration of complete integration of Leadership Tier competencies.
+2. Demonstration of consistently sound judgment.
+3. Demonstration of effective participant stewardship.
+4. Demonstration of appropriate operational decision-making.
+5. Demonstration of clear communication.
+6. Demonstration of appropriate restraint.
+7. Demonstration of appropriate experimentation and innovation.
+8. Demonstration of humility and professionalism.
+9. Sign-off by a qualified Evaluator or Examiner.
+
+
+## Privileges
+
+- Plan, organize, brief, lead, and debrief movement jumps without Leadership Tier operational restrictions.
+- Introduce movement concepts and complexity appropriate to participant competency and operational conditions.
+- Utilize staged breakoffs and leader switching when appropriate.
+- Determine appropriate group size and organizational structure.
+- Mentor developing movement leaders.
+- Pursue Evaluator certification.
+
+
+## Restrictions
+
+A Lead 4 flyer remains responsible for operating within all applicable drop zone rules, governing organization requirements, aircraft procedures, and applicable laws and regulations.
+
+The absence of Leadership Tier operational restrictions does not remove the responsibility to exercise sound judgment.
+
+
+## Advancement Path
+
+- Evaluator Tier
+
+
+## Duplication Audit
+
+### Expanded Competencies
+
+- Leadership responsibility.
+- Risk assessment and prioritization.
+- Movement planning and design.
+- Participant assessment and matching.
+- Communication.
+- Complexity management.
+- Debriefing and feedback.
+
+### New Competencies
+
+- Independent operational boundary setting.
+- Judgment without external guardrails.
+- Managed experimentation and innovation.
+- Mixed-experience group leadership.
+- Leadership mentoring.
+- Whole-experience stewardship.
+
+## Operational Outcome
+
+A successful Lead 4 flyer consistently demonstrates the judgment, maturity, and leadership necessary to safely design and lead movement jumps appropriate for any group of participants and any appropriate level of complexity.
+
+Participants trust the leader's decisions.
+
+Participants understand the plan.
+
+Participants are appropriately challenged.
+
+Participants enjoy the experience.
+
+Participants continue progressing.
+
+The leader consistently exercises sound judgment regardless of whether the progression framework explicitly prescribes the correct course of action.
+
+
+## Defining Question
+
+Can I consistently exercise sound judgment without external guardrails?
 
 ---
 
-# Part IV — EE Tier (v0.9 Integrated)
+# Part IV — EE Tier
 
 ## Purpose
 
@@ -2868,11 +3612,11 @@ An Evaluator is defined by demonstrated competency in the following areas.
 
 ## Competency 1 — Objectivity
 
-### EVAL-OBJ-001
+#### EVAL-OBJ-001
 
 Maintain objectivity by evaluating evidence independently of reputation, relationships, popularity, experience, or personal preference.
 
-#### Student Explanation
+##### Student Explanation
 
 Objectivity protects fairness and consistency.
 
@@ -2886,7 +3630,7 @@ The question is:
 
 What does the evidence demonstrate?
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A useful self-check is:
 
@@ -2894,11 +3638,11 @@ If I didn’t know who this person was, what conclusion would I reach from the e
 
 ## Competency 2 — Observation
 
-### EVAL-OBS-001
+#### EVAL-OBS-001
 
 Accurately identify relevant behaviors, decisions, conditions, and outcomes during observation or evidence review.
 
-#### Student Explanation
+##### Student Explanation
 
 Good evaluation begins with accurate observation.
 
@@ -2906,17 +3650,17 @@ Observation requires more than watching.
 
 It requires recognizing what matters.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A primary failure mode is missing critical information that should influence the evaluation decision.
 
 ## Competency 3 — Judgment
 
-### EVAL-JDG-001
+#### EVAL-JDG-001
 
 Exercise sound judgment by accurately distinguishing between imperfections, deficiencies, competency gaps, and meaningful risks.
 
-#### Student Explanation
+##### Student Explanation
 
 Not every mistake is a failure.
 
@@ -2924,7 +3668,7 @@ Not every imperfection is a deficiency.
 
 Not every deficiency creates unacceptable risk.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A useful question is:
 
@@ -2932,15 +3676,15 @@ Does this issue meaningfully affect the candidate’s ability to safely exercise
 
 ## Competency 4 — Standards Discipline
 
-### EVAL-STD-001
+#### EVAL-STD-001
 
 Apply published standards consistently and independently of personal preference, convenience, or external pressure.
 
-#### Student Explanation
+##### Student Explanation
 
 Standards only remain meaningful if they are applied consistently.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A useful self-check is:
 
@@ -2950,29 +3694,29 @@ Evaluators help candidates reach the standard rather than moving the standard to
 
 ## Competency 5 — Development
 
-### EVAL-DEV-001
+#### EVAL-DEV-001
 
 Support candidate growth through clear feedback, meaningful guidance, and actionable developmental direction.
 
-#### Student Explanation
+##### Student Explanation
 
 Even when a candidate receives a Not Yet outcome, they should leave with greater clarity about how to improve.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A Not Yet outcome should create clarity rather than confusion.
 
 ## Competency 6 — Stewardship
 
-### EVAL-STW-001
+#### EVAL-STW-001
 
 Protect the integrity of the progression system by preserving standards, consistency, and institutional knowledge.
 
-#### Student Explanation
+##### Student Explanation
 
 Evaluators are responsible for more than individual certification decisions.
 
-#### Evaluator Guidance
+##### Evaluator Guidance
 
 A useful self-check is:
 
@@ -3085,15 +3829,15 @@ Observation allows the Evaluator to:
 
 Accurate observation protects both standards and people.
 
-### EVAL-OBS-002
+#### EVAL-OBS-002
 
 Identify behaviors, decisions, and conditions that create unnecessary risk for the candidate or others.
 
-### EVAL-OBS-003
+#### EVAL-OBS-003
 
 Accurately identify relevant candidate actions, decisions, and outcomes during direct observation or video review.
 
-### EVAL-OBS-004
+#### EVAL-OBS-004
 
 Distinguish relevant observations from irrelevant observations.
 
@@ -3113,13 +3857,13 @@ Evaluators certify competency, not perfection.
 
 Evaluators certify demonstrated competency, not future potential.
 
-### EVAL-CMP-001
+#### EVAL-CMP-001
 
 Recognize competency rather than perfection.
 
 Distinguish minor imperfections from meaningful deficiencies.
 
-### EVAL-CMP-002
+#### EVAL-CMP-002
 
 Recognize skill ownership versus isolated success.
 
@@ -3128,7 +3872,7 @@ Distinguish between:
 - A candidate who owns the skill
 - A candidate who performed successfully once
 
-### EVAL-CMP-003
+#### EVAL-CMP-003
 
 Evaluate demonstrated competency rather than assumed competency.
 
@@ -3153,23 +3897,23 @@ Purpose:
 
 Apply published standards consistently, objectively, and professionally.
 
-### EVAL-STD-002
+#### EVAL-STD-002
 
 Compare observable evidence directly against published evaluation criteria.
 
-### EVAL-STD-003
+#### EVAL-STD-003
 
 Apply the same standard to all candidates.
 
-### EVAL-STD-004
+#### EVAL-STD-004
 
 Distinguish deficiencies from minor imperfections.
 
-### EVAL-STD-005
+#### EVAL-STD-005
 
 Avoid introducing requirements that do not exist within the published standard.
 
-### EVAL-STD-006
+#### EVAL-STD-006
 
 Avoid ignoring requirements that do exist within the published standard.
 
@@ -3187,23 +3931,23 @@ Purpose:
 
 Make responsible certification decisions based upon demonstrated competency and observable evidence.
 
-### EVAL-SGN-001
+#### EVAL-SGN-001
 
 Determine whether available evidence is sufficient to support certification.
 
-### EVAL-SGN-002
+#### EVAL-SGN-002
 
 Issue Ready outcomes only when competency has been clearly demonstrated.
 
-### EVAL-SGN-003
+#### EVAL-SGN-003
 
 Issue Not Yet outcomes when competency has not yet been clearly demonstrated.
 
-### EVAL-SGN-004
+#### EVAL-SGN-004
 
 Separate demonstrated competency from future potential.
 
-### EVAL-SGN-005
+#### EVAL-SGN-005
 
 Accept responsibility for certification decisions.
 
@@ -3221,23 +3965,23 @@ Purpose:
 
 Support candidate development while preserving standards.
 
-### EVAL-COA-001
+#### EVAL-COA-001
 
 Provide clear and actionable developmental feedback.
 
-### EVAL-COA-002
+#### EVAL-COA-002
 
 Explain deficiencies in a way that promotes understanding and improvement.
 
-### EVAL-COA-003
+#### EVAL-COA-003
 
 Identify developmental priorities.
 
-### EVAL-COA-004
+#### EVAL-COA-004
 
 Communicate expectations clearly.
 
-### EVAL-COA-005
+#### EVAL-COA-005
 
 Support growth without lowering standards.
 
@@ -3652,6 +4396,55 @@ The specification remains the master source of truth.
 
 Derivative materials should not independently redefine standards.
 
+# Change Review Safeguards
+
+The following safeguards apply to all future revisions.
+
+## Constitutional Precedence
+
+When conflicts arise between implementation details and constitutional principles, the constitutional principles take precedence.
+
+Every proposed change should first be evaluated against Part I. A change that violates a constitutional principle should not be accepted, regardless of how the wording reads.
+
+Constitutional amendments require extraordinary justification.
+
+## Development Theme Protection
+
+Development Themes are structural, not descriptive. Each theme explains why its level exists and justifies that level's restrictions.
+
+Development Themes require architectural review before modification.
+
+## Privilege Change Review
+
+Privileges are the primary regression surface of the specification.
+
+Every proposed privilege change requires review of the associated:
+
+- Responsibility
+- Evaluation Criteria
+- Restrictions
+- Advancement Path
+
+A privilege change without a corresponding responsibility change should be treated as a probable error.
+
+## Restriction Removal Review
+
+Every restriction in this specification serves a developmental objective.
+
+Before removing a restriction, identify the developmental objective that would disappear with it. If no objective can be identified, investigate before removing; the objective may be implicit rather than absent.
+
+## Competency Identifier Freeze
+
+Competency and skill identifiers (for example, LEAD3-PLN-001) are frozen as of v0.10.
+
+Wording may be edited. Identifiers may not be renumbered or reorganized. New competencies receive new identifiers.
+
+## Appendix Growth Principle
+
+The core specification should remain stable. The appendices are the designated location for growth.
+
+Example dives, evaluation examples, risk examples, and case studies belong in appendices rather than inside progression levels.
+
 # Versioning Philosophy
 
 Version numbers represent specification maturity.
@@ -3696,15 +4489,21 @@ The purpose is to preserve program history and decision traceability.
 | --- | --- |
 | 0.8 | Master consolidated baseline. Constitutional Layer, Design Decision Register (DD-001–DD-025, CDD-001–CDD-004), Specification Architecture, Solo, and Evaluator Foundation established. |
 | 0.9 | Added DD-026 (Evaluator Competency Model). Integrated the Evaluator Competency Model, full Evaluator Skill Domains (Observation, Competency Recognition, Standards Application, Sign-Off Decisions, Coaching), Domain-to-Competency Mapping, Evaluation Criteria, Privileges, Restrictions, and Advancement Path into Part IV. Evaluator status elevated to Operationally Complete. Added Appendix I-A (Evaluator Competency Reference) and updated Appendix I, Appendix J, and Appendix K maturity assessments. |
+| 0.10 | Integrated the complete Lead 4 level (Demonstrated Discernment), completing the Leadership Tier. Added the Implementation Discoveries section to Part I (ID-001 through ID-009 and the Framework Mission Statement), recording the constitutional principles verified during implementation. Rewrote the Leader Tier overview to define leadership, establish the tier architecture, and explain developmental guardrails. Added Change Review Safeguards to Part V (constitutional precedence, development theme protection, privilege change review, restriction removal review, competency identifier freeze, appendix growth principle). Corrected the Current Program Status, Appendix A Responsibility Ladder, Appendix J Future Work Registry, and Appendix K Maturity Assessment, which had not been updated as Group and Lead 1–3 were implemented. Normalized all completed level statuses to Operationally Complete. Added Prerequisites sections to Lead 1–4 per the Level Architecture. Restored the Student Explanation and Evaluator Guidance layers for all Lead 1 and Lead 2 skills, which had been dropped during earlier consolidation. Added the Skill Formatting Standard to Part II and normalized skill formatting across all levels (categories at heading level three, skill identifiers at heading level four, requirement layers at heading level five). Removed PP-002 through PP-004 as duplicates of FP-004 through FP-006 and retired those identifiers. Added Duplication Audits to Lead 3 and Lead 4. Expanded the Appendix C Authority Matrix to match the Part I Authority Model. |
 
 # Current Program Status
 
 Implemented:
 
-- Constitutional Layer
+- Constitutional Layer (including Implementation Discoveries)
 - Design Decision Register
 - Specification Architecture
-- Solo
+- Solo (Operationally Complete)
+- Group (Operationally Complete)
+- Lead 1 (Operationally Complete)
+- Lead 2 (Operationally Complete)
+- Lead 3 (Operationally Complete)
+- Lead 4 (Operationally Complete)
 - EE Tier Foundation
 - Evaluator (Operationally Complete)
 
@@ -3714,16 +4513,11 @@ Partially Implemented:
 
 Not Yet Defined:
 
-- Group
-- Lead 1
-- Lead 2
-- Lead 3
-- Lead 4
 - Examiner (operational definition)
 
-The program should be considered architecturally mature but operationally incomplete.
+The Flyer Tier and Leader Tier are complete. The progression now forms an unbroken developmental ladder from Solo through Lead 4 into the Evaluator level.
 
-Future development should focus on completing the remaining levels rather than introducing new architectural concepts.
+The program should be considered architecturally closed. Future development should focus on the Examiner operational definition, external expert review, and derivative materials rather than new architectural concepts.
 
 ---
 
@@ -3752,10 +4546,10 @@ Skills exist as evidence of readiness for that responsibility.
 | Solo | Manage yourself |
 | Group | Manage your position within a group |
 | Lead 1 | Manage one other flyer |
-| Lead 2 | Manage a small group |
-| Lead 3 | Manage a larger group |
-| Lead 4 | Manage a complex group |
-| Evaluator | Develop flyers |
+| Lead 2 | Manage a formation |
+| Lead 3 | Introduce and manage complexity appropriately |
+| Lead 4 | Exercise sound judgment while stewarding the entire movement jump experience |
+| Evaluator | Develop people while protecting standards |
 | Examiner | Develop evaluators and protect standards |
 
 ## Interpretation
@@ -3793,12 +4587,14 @@ The Authority Matrix summarizes authority throughout the program.
 
 Authority must always be explicit.
 
-| Tier | Authority |
+| Role | Authority |
 | --- | --- |
-| Flyer | Participate within authorized privileges |
-| Leader | Plan and manage movement jumps |
-| Evaluator | Certify competency |
-| Examiner | Certify evaluators and interpret standards |
+| Flyer | Participate in movement jumps within the privileges granted by their current certification level |
+| Leader | Plan and manage movement jumps within the privileges granted by their current certification level |
+| Evaluator | Certify demonstrated competency; authorize progression within the limits defined by the program |
+| Examiner | Certify evaluators; interpret standards; resolve standards disputes; participate in stewardship and evolution of the progression system |
+
+Authority within each role is further limited by the privileges and restrictions of the individual's certification level, as defined in Parts III and IV.
 
 ## Notes
 
@@ -4057,18 +4853,15 @@ Items listed here are not yet standards.
 
 ## Flyer Tier
 
-Status: Pending
+Status: Complete
 
-- Group
+Solo and Group are fully defined. Remaining Flyer Tier work is refinement based on operational experience rather than new definition.
 
 ## Leader Tier
 
-Status: Pending
+Status: Complete
 
-- Lead 1
-- Lead 2
-- Lead 3
-- Lead 4
+Lead 1 through Lead 4 are fully defined and Operationally Complete. External expert review and operational validation remain recommended before broad adoption.
 
 ## Evaluator
 
@@ -4112,9 +4905,9 @@ Future review required:
 | Governance Model | Complete |
 | Evaluation Model | Complete |
 | Solo | Complete |
-| Evaluator Foundation | Substantially Defined |
-| Group | Pending |
-| Lead 1–4 | Pending |
+| Group | Complete |
+| Lead 1–4 | Complete |
+| Evaluator | Complete |
 | Examiner | Pending |
 
 ## Evaluator Foundation Status
@@ -4132,8 +4925,10 @@ Remaining Work:
 
 ## Current Assessment
 
-The program architecture is mature.
+The program architecture is closed.
 
-The primary remaining work is completion of the Examiner level and implementation of the remaining Flyer and Leader tier levels.
+The Flyer Tier, Leader Tier, and Evaluator level are complete. The specification now defines an unbroken developmental progression from Solo through Evaluator.
 
-Future development should prioritize completion rather than expansion of architectural concepts.
+The primary remaining work is the Examiner operational definition, external expert review of the Leader Tier draft levels, and the development of derivative materials.
+
+Future development should prioritize completion and validation rather than expansion of architectural concepts.
