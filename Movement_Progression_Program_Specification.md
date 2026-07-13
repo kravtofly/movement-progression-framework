@@ -1,10 +1,10 @@
 # Movement Progression Program Specification
 
-## Version 0.12: Master Consolidated Draft
+## Version 1.0: Master Specification
 
 ### Status
 
-Authoritative v0.12 Draft
+Authoritative v1.0 Release
 
 ### Purpose
 
@@ -16,7 +16,7 @@ All future program materials, training resources, evaluation systems, software t
 
 This document is intended to preserve not only standards, but also the reasoning and design decisions that produced those standards.
 
-This v0.12 consolidation integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
+This v1.0 release integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
 
 ---
 
@@ -1645,6 +1645,9 @@ A stable exit establishes predictability and control.
 
 The candidate should demonstrate controlled exits appropriate for introductory movement flight.
 
+Duplication Audit: 🟢 New
+
+
 #### SOLO-FLT-002
 
 Stable belly tracking position.
@@ -1656,6 +1659,9 @@ A stable tracking position provides predictable movement and control.
 ##### Evaluator Guidance
 
 The candidate should demonstrate consistent body position and control.
+
+Duplication Audit: 🟢 New
+
 
 #### SOLO-FLT-003
 
@@ -1671,6 +1677,9 @@ Improvisation should not replace flight discipline.
 
 Observe whether the candidate remains committed to the planned flight path.
 
+Duplication Audit: 🟢 New
+
+
 #### SOLO-FLT-004
 
 Deploy in the intended area.
@@ -1685,6 +1694,9 @@ Movement planning should result in safe deployment locations.
 
 Observe deployment awareness, planning, and execution.
 
+Duplication Audit: 🟢 New
+
+
 ### Learning Skills
 
 #### SOLO-LRN-001
@@ -1698,6 +1710,8 @@ Learning accelerates when performance is reviewed and discussed.
 ##### Evaluator Guidance
 
 The candidate should demonstrate willingness to engage in debrief discussion and apply feedback.
+
+Duplication Audit: 🟢 New
 
 
 ### Risk Management Skills
@@ -4098,6 +4112,10 @@ Observation allows the Evaluator to:
 
 Accurate observation protects both standards and people.
 
+Primary Failure:
+
+Failing to recognize dangerous behavior that places the candidate or others at risk.
+
 #### EVAL-OBJ-001
 
 Maintain objectivity by evaluating evidence independently of reputation, relationships, popularity, experience, or personal preference.
@@ -4122,9 +4140,14 @@ A useful self-check is:
 
 If I didn’t know who this person was, what conclusion would I reach from the evidence alone?
 
+The Examiner should assess whether the candidate reaches the same conclusions when candidate identity is masked, such as in blind video review, as when it is known.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-OBS-001
 
-Accurately identify relevant behaviors, decisions, conditions, and outcomes during observation or evidence review.
+Accurately identify relevant behaviors, decisions, conditions, and outcomes during direct observation or video review.
 
 ##### Student Explanation
 
@@ -4134,25 +4157,63 @@ Observation requires more than watching.
 
 It requires recognizing what matters.
 
+Evidence arrives through different mediums, and each has blind spots: direct observation captures context video misses, and video captures detail live observation misses.
+
+The Evaluator must extract accurate observations from whichever medium the evidence arrives in.
+
 ##### Evaluator Guidance
 
 A primary failure mode is missing critical information that should influence the evaluation decision.
+
+The Examiner should assess accurate observation across both live jumps and video review, comparing the candidate's observations against their own review of the same evidence.
+
+Duplication Audit: 🟢 New
+
+Consolidation note: EVAL-OBS-003 was consolidated into EVAL-OBS-001 in v1.0 because the two requirements duplicated each other. The identifier EVAL-OBS-003 is retired and will not be reassigned.
 
 #### EVAL-OBS-002
 
 Identify behaviors, decisions, and conditions that create unnecessary risk for the candidate or others.
 
-#### EVAL-OBS-003
+##### Student Explanation
 
-Accurately identify relevant candidate actions, decisions, and outcomes during direct observation or video review.
+Risk identification is the safety-critical core of observation.
+
+A candidate may fly well while making decisions that create risk they cannot yet see.
+
+The Evaluator is responsible for recognizing dangerous behavior even when the jump outcome was successful.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate recognition of risk-creating behavior in observed or reviewed jumps, including risks that did not result in a bad outcome.
+
+The Examiner should treat a missed dangerous behavior as the most serious observation failure.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+
 
 #### EVAL-OBS-004
 
 Distinguish relevant observations from irrelevant observations.
 
-Primary Failure:
+##### Student Explanation
 
-Failing to recognize dangerous behavior that places the candidate or others at risk.
+Not everything visible matters.
+
+Style differences, harmless variations, and personal preferences are noise.
+
+Observations matter when they bear on the published criteria or on safety.
+
+Evaluating noise produces inconsistent outcomes and unfair evaluations.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate filtering: observations cited in their evaluations should trace to published criteria or safety.
+
+The Examiner should probe whether the candidate can articulate why each cited observation matters.
+
+Duplication Audit: 🟢 New
 
 
 ### Competency Recognition Skills
@@ -4163,11 +4224,35 @@ Recognize demonstrated competency accurately and consistently.
 
 Core principle: Evaluators certify competency, not perfection. Evaluators certify demonstrated competency, not future potential.
 
+Primary Failures:
+
+- Confusing competency with perfection
+- Certifying future potential
+- Certifying reputation
+- Certifying isolated success
+
 #### EVAL-CMP-001
 
 Recognize competency rather than perfection.
 
 Distinguish minor imperfections from meaningful deficiencies.
+
+##### Student Explanation
+
+No candidate flies a perfect jump.
+
+Competency means the candidate can safely and reliably exercise the privileges of the certification, not that they perform flawlessly.
+
+Holding candidates to perfection is a standards violation in the other direction.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate Ready decisions in the presence of minor imperfections and articulate why those imperfections do not affect safe privilege exercise.
+
+The Examiner should assess whether the candidate's bar sits at the published standard, neither above nor below it.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-CMP-002
 
@@ -4177,6 +4262,23 @@ Distinguish between:
 
 - A candidate who owns the skill
 - A candidate who performed successfully once
+
+##### Student Explanation
+
+One successful demonstration proves the candidate can perform the skill once.
+
+Ownership means the skill holds up across jumps, conditions, and pressure.
+
+Certification is a statement about ownership, so the evidence must show repetition, not luck.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to articulate what evidence separates ownership from a good day, and to withhold certification when only isolated success has been shown.
+
+The Examiner should assess whether the candidate's evidence threshold reflects the Competency Framework's ownership definition.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-CMP-003
 
@@ -4190,12 +4292,21 @@ Base decisions on observable evidence rather than:
 - Expectations
 - Potential
 
-Primary Failures:
+##### Student Explanation
 
-- Confusing competency with perfection
-- Certifying future potential
-- Certifying reputation
-- Certifying isolated success
+Reputation, experience, and jump numbers are not evidence.
+
+A candidate with two thousand jumps must demonstrate the same competencies as a candidate with two hundred.
+
+Assumption is how unqualified candidates get certified and how standards erode.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate identical evidence requirements regardless of who the candidate is.
+
+The Examiner should specifically test this with high-reputation or high-experience candidates, where assumption pressure is strongest.
+
+Duplication Audit: 🟢 New
 
 
 ### Standards Application Skills
@@ -4203,6 +4314,14 @@ Primary Failures:
 Purpose:
 
 Apply published standards consistently, objectively, and professionally.
+
+Primary Failures:
+
+- Evaluating reputation instead of evidence
+- Creating personal standards
+- Lowering standards for preferred candidates
+- Raising standards for disfavored candidates
+- Allowing evaluator drift
 
 #### EVAL-STD-001
 
@@ -4220,33 +4339,112 @@ Am I applying the published standard, or my personal version of the standard?
 
 Evaluators help candidates reach the standard rather than moving the standard to reach the candidate.
 
+The Examiner should assess consistency of the candidate's standards application across candidates, conditions, and social pressure.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-STD-002
 
 Compare observable evidence directly against published evaluation criteria.
+
+##### Student Explanation
+
+Evaluation is a comparison between what was observed and what the standard requires, and nothing else.
+
+Working from memory of the standard, or from a general impression of the candidate, replaces the published standard with a personal one.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate evaluations that reference specific published criteria, not general impressions.
+
+The Examiner should assess whether the candidate can point to the criterion behind each element of their decision.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-STD-003
 
 Apply the same standard to all candidates.
 
+##### Student Explanation
+
+A standard applied unevenly is not a standard.
+
+Friends, strangers, skilled flyers, and struggling ones all receive the same criteria, the same evidence requirements, and the same outcomes for the same performance.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate consistency across candidates over multiple evaluations.
+
+The Examiner should look for the two failure directions: lowered standards for preferred candidates and raised standards for disfavored ones.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-STD-004
 
 Distinguish deficiencies from minor imperfections.
+
+##### Student Explanation
+
+A deficiency affects the candidate's ability to safely exercise the certification's privileges.
+
+An imperfection does not.
+
+Treating imperfections as deficiencies blocks qualified candidates; treating deficiencies as imperfections certifies unqualified ones.
+
+The distinction is the standard itself.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate correct classification of observed issues against the privilege-relevance test.
+
+The Examiner should present or discuss borderline cases and assess the candidate's reasoning, not just their conclusion.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-STD-005
 
 Avoid introducing requirements that do not exist within the published standard.
 
+##### Student Explanation
+
+Evaluators do not get to add pet requirements: a preferred technique, extra demonstrations, a personal style.
+
+Every requirement a candidate must meet is written down.
+
+If it is not written down, it is not required.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate evaluations free of unpublished requirements.
+
+The Examiner should ask the candidate to source each requirement they applied; anything without a citation to the published standard is a violation of this skill.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-STD-006
 
 Avoid ignoring requirements that do exist within the published standard.
 
-Primary Failures:
+##### Student Explanation
 
-- Evaluating reputation instead of evidence
-- Creating personal standards
-- Lowering standards for preferred candidates
-- Raising standards for disfavored candidates
-- Allowing evaluator drift
+The mirror failure: skipping requirements out of sympathy, schedule pressure, or the sense that a candidate is close enough.
+
+Every published requirement exists for a documented reason.
+
+An Evaluator who waives requirements is silently rewriting the standard.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate complete coverage of published criteria in their evaluations.
+
+The Examiner should audit evaluations for skipped or soft-graded requirements, especially under time or social pressure.
+
+Duplication Audit: 🟢 New
 
 
 ### Sign-Off Decisions Skills
@@ -4254,6 +4452,14 @@ Primary Failures:
 Purpose:
 
 Make responsible certification decisions based upon demonstrated competency and observable evidence.
+
+Primary Failures:
+
+- Certifying potential
+- Certifying reputation
+- Certifying effort
+- Certifying insufficient evidence
+- Avoiding difficult decisions
 
 #### EVAL-JDG-001
 
@@ -4273,6 +4479,11 @@ A useful question is:
 
 Does this issue meaningfully affect the candidate’s ability to safely exercise the privileges associated with this certification?
 
+The Examiner should present borderline cases and assess whether the candidate's classifications trace to privilege-relevant risk rather than personal strictness or leniency.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+
 #### EVAL-STW-001
 
 Protect the integrity of the progression system by preserving standards, consistency, and institutional knowledge.
@@ -4287,33 +4498,112 @@ A useful self-check is:
 
 If every Evaluator made this decision the way I am making it now, what would happen to the standard over time?
 
+The Examiner should assess whether the candidate's decisions would preserve the standard if universalized across all evaluators.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-SGN-001
 
 Determine whether available evidence is sufficient to support certification.
+
+##### Student Explanation
+
+Before asking whether the candidate is competent, ask whether the evidence can answer that question.
+
+Thin evidence (too few jumps, poor video, unobserved criteria) cannot support certification no matter how promising the candidate looks.
+
+The correct response to insufficient evidence is gathering more, not guessing.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate explicit sufficiency judgments before outcome decisions.
+
+The Examiner should assess whether the candidate can articulate what evidence is missing and how to obtain it.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-SGN-002
 
 Issue Ready outcomes only when competency has been clearly demonstrated.
 
+##### Student Explanation
+
+Ready is a professional endorsement with the Evaluator's name on it.
+
+It means the evidence clearly demonstrates the candidate can safely exercise the certification's privileges.
+
+Probably ready is Not Yet.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate Ready decisions that another Evaluator reviewing the same evidence would reach independently.
+
+The Examiner should review a sample of the candidate's Ready decisions against the underlying evidence.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-SGN-003
 
 Issue Not Yet outcomes when competency has not yet been clearly demonstrated.
+
+##### Student Explanation
+
+Not Yet is not a punishment and not a verdict on the person.
+
+It is an accurate statement that the evidence does not yet demonstrate competency, paired with a path forward.
+
+Avoiding Not Yet decisions to spare feelings certifies risk into the sky.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate willingness to issue Not Yet outcomes, including to friends, skilled flyers, and persistent candidates.
+
+The Examiner should weigh how the candidate delivers the outcome: accurately, constructively, and without apology for the standard.
+
+Duplication Audit: 🟢 New
+
 
 #### EVAL-SGN-004
 
 Separate demonstrated competency from future potential.
 
+##### Student Explanation
+
+They will get there is a prediction, not evidence.
+
+Certification answers what the candidate can do today.
+
+Potential is developed through coaching; it is never certified.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate decisions grounded exclusively in demonstrated performance.
+
+The Examiner should probe cases where the candidate believed in a flyer's trajectory and assess whether that belief leaked into the outcome.
+
+Duplication Audit: 🟢 New
+
+
 #### EVAL-SGN-005
 
 Accept responsibility for certification decisions.
 
-Primary Failures:
+##### Student Explanation
 
-- Certifying potential
-- Certifying reputation
-- Certifying effort
-- Certifying insufficient evidence
-- Avoiding difficult decisions
+Every sign-off carries the Evaluator's personal endorsement: I stand behind this decision.
+
+That includes owning the outcome when a certified flyer later demonstrates the certification was premature, and correcting course rather than deflecting.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate ownership language and behavior around their decisions, past and hypothetical.
+
+The Examiner should assess whether the candidate treats sign-offs as endorsements they carry or paperwork they process.
+
+Duplication Audit: 🟢 New
 
 
 ### Coaching Skills
@@ -4321,6 +4611,13 @@ Primary Failures:
 Purpose:
 
 Support candidate development while preserving standards.
+
+Primary Failures:
+
+- Providing unclear feedback
+- Lowering standards
+- Failing to explain deficiencies
+- Creating confusion about expectations
 
 #### EVAL-DEV-001
 
@@ -4334,32 +4631,114 @@ Even when a candidate receives a Not Yet outcome, they should leave with greater
 
 A Not Yet outcome should create clarity rather than confusion.
 
+The Examiner should assess whether candidates evaluated by this person leave with an accurate understanding of their performance and a usable path forward.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+
 #### EVAL-COA-001
 
 Provide clear and actionable developmental feedback.
+
+##### Student Explanation
+
+Feedback exists so the candidate knows exactly what to work on and how.
+
+Tighten up your flying is not feedback; your slot drifts low during heading changes, hold your reference through the turn, is.
+
+Clarity is a kindness; vagueness wastes the candidate's jumps.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate feedback specific enough that the recipient could plan their next jump from it.
+
+The Examiner should assess whether recipients can accurately restate what to work on.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
 
 #### EVAL-COA-002
 
 Explain deficiencies in a way that promotes understanding and improvement.
 
+##### Student Explanation
+
+A candidate who understands why something is a deficiency can fix it.
+
+A candidate who only knows they failed cannot.
+
+Explanation connects the observed issue to the standard, the risk, and the correction.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate explanations that link deficiency, consequence, and correction.
+
+The Examiner should assess whether candidates leave evaluations understanding their deficiencies or merely knowing their outcome.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+
 #### EVAL-COA-003
 
 Identify developmental priorities.
+
+##### Student Explanation
+
+Candidates cannot fix everything at once.
+
+The Evaluator identifies which deficiency matters most, usually the one affecting safety or blocking the most downstream progress, and directs effort there first.
+
+A list of ten problems is less useful than the right one.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate prioritization with safety-relevant deficiencies first.
+
+The Examiner should assess whether the candidate can defend the ordering, not just produce it.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
 
 #### EVAL-COA-004
 
 Communicate expectations clearly.
 
+##### Student Explanation
+
+Candidates should never be surprised by an evaluation.
+
+Before the jump, they should know what will be evaluated and what the standard requires.
+
+Ambiguity about expectations produces Not Yet outcomes that teach nothing.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate pre-evaluation communication that leaves candidates able to state what is expected of them.
+
+The Examiner should assess whether Not Yet outcomes ever trace back to expectations the candidate was never given.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+
 #### EVAL-COA-005
 
 Support growth without lowering standards.
 
-Primary Failures:
+##### Student Explanation
 
-- Providing unclear feedback
-- Lowering standards
-- Failing to explain deficiencies
-- Creating confusion about expectations
+This is the central tension of the Evaluator role.
+
+The developmental move is never to soften the standard; it is to strengthen the path to it.
+
+Evaluators help candidates reach the standard rather than moving the standard to reach the candidate.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate encouragement and investment in struggling candidates alongside unmoved standards.
+
+The Examiner should treat any instance of standard-softening framed as kindness as a failure of this skill, not a style difference.
+
+Duplication Audit: 🟢 New
 
 
 ## Evaluation Criteria
@@ -5195,6 +5574,8 @@ Competency and skill identifiers (for example, LEAD3-PLN-001) are frozen as of v
 
 Wording may be edited. Identifiers may not be renumbered or reorganized. New competencies receive new identifiers.
 
+Identifiers may be retired through documented consolidation when requirements are found to duplicate each other. Retired identifiers are never reassigned.
+
 ## Appendix Growth Principle
 
 The core specification should remain stable. The appendices are the designated location for growth.
@@ -5248,6 +5629,7 @@ The purpose is to preserve program history and decision traceability.
 | 0.10 | Integrated the complete Lead 4 level (Demonstrated Discernment), completing the Leadership Tier. Added the Implementation Discoveries section to Part I (ID-001 through ID-009 and the Framework Mission Statement), recording the constitutional principles verified during implementation. Rewrote the Leader Tier overview to define leadership, establish the tier architecture, and explain developmental guardrails. Added Change Review Safeguards to Part V (constitutional precedence, development theme protection, privilege change review, restriction removal review, competency identifier freeze, appendix growth principle). Corrected the Current Program Status, Appendix A Responsibility Ladder, Appendix J Future Work Registry, and Appendix K Maturity Assessment, which had not been updated as Group and Lead 1–3 were implemented. Normalized all completed level statuses to Operationally Complete. Added Prerequisites sections to Lead 1–4 per the Level Architecture. Restored the Student Explanation and Evaluator Guidance layers for all Lead 1 and Lead 2 skills, which had been dropped during earlier consolidation. Added the Skill Formatting Standard to Part II and normalized skill formatting across all levels (categories at heading level three, skill identifiers at heading level four, requirement layers at heading level five). Removed PP-002 through PP-004 as duplicates of FP-004 through FP-006 and retired those identifiers. Added Duplication Audits to Lead 3 and Lead 4. Expanded the Appendix C Authority Matrix to match the Part I Authority Model. |
 | 0.11 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all Lead 3 and Lead 4 skills with per-skill duplication classifications, completing three-layer requirement coverage across the Flyer and Leader Tiers. Corrected the Lead 3 Duplication Audit (staged breakoff implementation moved to Lead 4). Replaced all em dashes with standard punctuation throughout the specification. |
 | 0.12 | Restructured the Evaluator level to full Level Architecture compliance: all sections nested under the level, all 27 skills consolidated under a single Skills section organized by domain, competency exemplar skills relocated to matching domains, and Knowledge, Development Theme, Prerequisites, Duplication Audit, and Defining Question sections added. Removed the redundant Evaluator Status Summary. Authored and integrated the complete Examiner operational definition: Intent Statement, Responsibility, Prerequisites, Selection with founding appointment clause, Authority, Knowledge, ten fully layered EXAM skills, Evaluation Criteria, Privileges, Restrictions, terminal Advancement Path, Duplication Audit, and Defining Question. Development Theme: Institutional Stewardship. Updated the Current Program Status, Appendix J, and Appendix K to reflect a fully defined progression from Solo through Examiner. |
+| 1.0 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all remaining Evaluator domain skills, completing three-layer requirement coverage for every skill in the specification. Consolidated EVAL-OBS-003 into EVAL-OBS-001 (duplicate requirements); the retired identifier will not be reassigned. Relocated domain-level Primary Failures blocks from within skill blocks to their category introductions for correct attribution. Added assessor-directed guidance to the six Evaluator competency exemplar skills, preserving their original self-check guidance. Completed Duplication Audit classification coverage for all skills, including the previously untagged Solo flight and learning skills. With every level defined and every requirement fully layered, this release constitutes the complete operational baseline defined by the Versioning Philosophy. |
 
 # Current Program Status
 
@@ -5265,13 +5647,9 @@ Implemented:
 - Evaluator (Operationally Complete)
 - Examiner (Operationally Complete)
 
-Remaining Definition Work:
+Every level of the progression is fully defined and fully layered, from Solo through Examiner.
 
-- Student Explanation and Evaluator Guidance layers for the Evaluator domain skills
-
-Every level of the progression is now defined, from Solo through Examiner.
-
-The program should be considered architecturally closed and operationally complete. Future development should focus on completing the remaining Evaluator skill layers, external expert review, operational validation, and derivative materials rather than new architectural concepts.
+The program should be considered architecturally closed and operationally complete. Future development should focus on external expert review, operational validation, and derivative materials rather than new architectural concepts.
 
 ---
 
@@ -5621,7 +5999,7 @@ Lead 1 through Lead 4 are fully defined and Operationally Complete. External exp
 
 Status: Operationally Complete
 
-The Evaluator level is fully restructured to the Level Architecture as of v0.12. Remaining work: Student Explanation and Evaluator Guidance layers for the domain skills.
+The Evaluator level is fully restructured to the Level Architecture and fully layered as of v1.0. EVAL-OBS-003 was consolidated into EVAL-OBS-001; the identifier is retired.
 
 ## Examiner
 
@@ -5658,9 +6036,7 @@ Future review required:
 
 Status: Operationally Complete
 
-Remaining Work:
-
-- Student Explanation and Evaluator Guidance layers for the Evaluator domain skills
+No remaining definition work.
 
 ## Current Assessment
 
@@ -5668,6 +6044,6 @@ The program architecture is closed.
 
 Every level is defined: Solo, Group, Lead 1 through Lead 4, Evaluator, and Examiner. The specification defines an unbroken developmental progression from first movement jump through terminal stewardship of the program itself.
 
-The primary remaining work is the Evaluator domain skill layers, external expert review, and the development of derivative materials.
+The primary remaining work is external expert review, operational validation, and the development of derivative materials.
 
 Future development should prioritize validation rather than expansion of architectural concepts.
