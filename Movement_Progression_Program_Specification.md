@@ -1,10 +1,10 @@
 # Movement Progression Program Specification
 
-## Version 0.11: Master Consolidated Draft
+## Version 0.12: Master Consolidated Draft
 
 ### Status
 
-Authoritative v0.11 Draft
+Authoritative v0.12 Draft
 
 ### Purpose
 
@@ -16,7 +16,7 @@ All future program materials, training resources, evaluation systems, software t
 
 This document is intended to preserve not only standards, but also the reasoning and design decisions that produced those standards.
 
-This v0.11 consolidation integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
+This v0.12 consolidation integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
 
 ---
 
@@ -3805,9 +3805,22 @@ Leaders primarily manage movement jumps.
 
 Evaluators primarily develop people while protecting standards.
 
-# Evaluator Selection
+## Development Theme
 
-## Purpose
+Stewardship
+
+An Evaluator is a steward of both people and standards, entrusted with preserving the integrity of the progression system while developing those within it.
+
+## Prerequisites
+
+Required
+
+- Lead 4 Certification
+- Selection for Evaluator development
+
+## Selection
+
+### Purpose
 
 Selection answers the question:
 
@@ -3819,7 +3832,7 @@ Selection grants opportunity.
 
 Certification grants authority.
 
-## Evaluator Candidate Indicators
+### Evaluator Candidate Indicators
 
 The following are not evaluation criteria.
 
@@ -3838,7 +3851,7 @@ Common indicators include:
 
 These indicators should be considered guidance rather than requirements.
 
-## Evaluator Development Entry
+### Evaluator Development Entry
 
 Development may begin through:
 
@@ -3850,7 +3863,8 @@ Development may begin through:
 
 Regardless of entry path, evaluation authority is earned through demonstrated evaluator competency.
 
-# Selection Versus Certification
+
+## Selection Versus Certification
 
 These are separate processes.
 
@@ -3866,7 +3880,8 @@ Selection evaluates suitability.
 
 Certification evaluates demonstrated competency.
 
-# Evaluator Authority
+
+## Authority
 
 Evaluators possess evaluation authority.
 
@@ -3881,31 +3896,31 @@ Evaluation authority is never implied by:
 
 Authority must be intentionally granted.
 
-## Evaluator Responsibilities
+### Evaluator Responsibilities
 
 Evaluators are responsible for:
 
-### Evaluate
+#### Evaluate
 
 Determine whether published standards have been met.
 
-### Educate
+#### Educate
 
 Help candidates understand standards and expectations.
 
-### Document
+#### Document
 
 Provide meaningful feedback and evaluation records.
 
-### Preserve Standards
+#### Preserve Standards
 
 Apply standards consistently and professionally.
 
-### Escalate
+#### Escalate
 
 Seek Examiner input when uncertainty exists.
 
-## Evaluator Non-Responsibilities
+### Evaluator Non-Responsibilities
 
 Evaluators are not responsible for:
 
@@ -3917,9 +3932,10 @@ Evaluators are not responsible for:
 
 Their responsibility is to the standard and to the candidate’s long-term development.
 
-# Evaluator Competency Model
 
-## Purpose
+## Evaluator Competency Model
+
+### Purpose
 
 The Evaluator Competency Model defines the foundational competencies required of all Evaluators.
 
@@ -3935,9 +3951,152 @@ The competency model serves as the foundation upon which all Evaluator domains a
 
 An Evaluator is not defined by flying ability alone.
 
-An Evaluator is defined by demonstrated competency in the following areas.
+An Evaluator is defined by demonstrated competency in the following areas:
 
-## Competency 1: Objectivity
+1. Objectivity
+2. Observation
+3. Judgment
+4. Standards Discipline
+5. Development
+6. Stewardship
+
+### Skill Domains
+
+The Evaluator Skill Domains represent practical applications of the Evaluator Competency Model.
+
+Domains describe what Evaluators do.
+
+Competencies describe the capabilities that allow them to do it effectively.
+
+### Domain-to-Competency Mapping
+
+| Domain | Primary Competencies |
+| --- | --- |
+| Observation | Objectivity, Observation |
+| Competency Recognition | Observation, Judgment |
+| Standards Application | Objectivity, Standards Discipline |
+| Sign-Off Decisions | Judgment, Stewardship |
+| Coaching | Development, Judgment |
+
+
+## Evaluation Philosophy
+
+### Core Evaluation Question
+
+Did the candidate satisfy the requirements shown in this evidence in a way that demonstrates competency sufficient for this certification?
+
+Everything else is secondary.
+
+### Evidence-Based Evaluation
+
+Certification decisions should be based on observable evidence.
+
+Evaluators should avoid basing decisions primarily on:
+
+- Reputation
+- Popularity
+- Jump numbers
+- Confidence
+- Potential
+- Personal relationships
+
+Evidence may include:
+
+- Direct observation
+- Video review
+- Structured discussion
+- Scenario evaluation
+
+Video is the preferred evidence artifact whenever practical.
+
+### Competency Versus Completion
+
+Evaluators must distinguish between:
+
+#### Completion
+
+The candidate performed the task.
+
+#### Competency
+
+The candidate performed the task:
+
+- Safely
+- Correctly
+- Consistently
+- With control
+
+#### Ownership
+
+The candidate demonstrates:
+
+- Comfort
+- Consistency
+- Intentionality
+
+The behavior appears normal rather than exceptional.
+
+Ownership represents deeper integration of the competency.
+
+### Evaluation Outcomes
+
+The program recognizes two outcomes.
+
+#### Ready
+
+Competency demonstrated.
+
+#### Not Yet
+
+Competency not yet demonstrated.
+
+Not Yet is developmental.
+
+Not Yet is not rejection.
+
+
+## Knowledge
+
+### Evaluation Foundations
+
+- Evidence-based evaluation.
+- Competency versus completion versus ownership.
+- Ready and Not Yet outcomes.
+- The limits of a single observation.
+
+### Standards Knowledge
+
+- Published standards for every level the Evaluator is authorized to certify.
+- The rationale behind standards.
+- The boundary between applying standards and modifying them.
+
+### Human Factors
+
+- Common evaluation biases, including reputation, relationship, and recency bias.
+- The limitations of candidate self-assessment.
+- How pressure from candidates, peers, and schedules degrades evaluation quality.
+
+### Developmental Communication
+
+- Delivering Not Yet outcomes constructively.
+- Structuring feedback that promotes progression.
+- Protecting candidate dignity while protecting standards.
+
+## Skills
+
+### Observation Skills
+
+Purpose:
+
+Observe accurately.
+
+Observation allows the Evaluator to:
+
+- Identify risk
+- Assess competency
+- Guide development
+
+Accurate observation protects both standards and people.
 
 #### EVAL-OBJ-001
 
@@ -3963,8 +4122,6 @@ A useful self-check is:
 
 If I didn’t know who this person was, what conclusion would I reach from the evidence alone?
 
-## Competency 2: Observation
-
 #### EVAL-OBS-001
 
 Accurately identify relevant behaviors, decisions, conditions, and outcomes during observation or evidence review.
@@ -3980,181 +4137,6 @@ It requires recognizing what matters.
 ##### Evaluator Guidance
 
 A primary failure mode is missing critical information that should influence the evaluation decision.
-
-## Competency 3: Judgment
-
-#### EVAL-JDG-001
-
-Exercise sound judgment by accurately distinguishing between imperfections, deficiencies, competency gaps, and meaningful risks.
-
-##### Student Explanation
-
-Not every mistake is a failure.
-
-Not every imperfection is a deficiency.
-
-Not every deficiency creates unacceptable risk.
-
-##### Evaluator Guidance
-
-A useful question is:
-
-Does this issue meaningfully affect the candidate’s ability to safely exercise the privileges associated with this certification?
-
-## Competency 4: Standards Discipline
-
-#### EVAL-STD-001
-
-Apply published standards consistently and independently of personal preference, convenience, or external pressure.
-
-##### Student Explanation
-
-Standards only remain meaningful if they are applied consistently.
-
-##### Evaluator Guidance
-
-A useful self-check is:
-
-Am I applying the published standard, or my personal version of the standard?
-
-Evaluators help candidates reach the standard rather than moving the standard to reach the candidate.
-
-## Competency 5: Development
-
-#### EVAL-DEV-001
-
-Support candidate growth through clear feedback, meaningful guidance, and actionable developmental direction.
-
-##### Student Explanation
-
-Even when a candidate receives a Not Yet outcome, they should leave with greater clarity about how to improve.
-
-##### Evaluator Guidance
-
-A Not Yet outcome should create clarity rather than confusion.
-
-## Competency 6: Stewardship
-
-#### EVAL-STW-001
-
-Protect the integrity of the progression system by preserving standards, consistency, and institutional knowledge.
-
-##### Student Explanation
-
-Evaluators are responsible for more than individual certification decisions.
-
-##### Evaluator Guidance
-
-A useful self-check is:
-
-If every Evaluator made this decision the way I am making it now, what would happen to the standard over time?
-
-# Evaluation Philosophy
-
-## Core Evaluation Question
-
-Did the candidate satisfy the requirements shown in this evidence in a way that demonstrates competency sufficient for this certification?
-
-Everything else is secondary.
-
-## Evidence-Based Evaluation
-
-Certification decisions should be based on observable evidence.
-
-Evaluators should avoid basing decisions primarily on:
-
-- Reputation
-- Popularity
-- Jump numbers
-- Confidence
-- Potential
-- Personal relationships
-
-Evidence may include:
-
-- Direct observation
-- Video review
-- Structured discussion
-- Scenario evaluation
-
-Video is the preferred evidence artifact whenever practical.
-
-## Competency Versus Completion
-
-Evaluators must distinguish between:
-
-### Completion
-
-The candidate performed the task.
-
-### Competency
-
-The candidate performed the task:
-
-- Safely
-- Correctly
-- Consistently
-- With control
-
-### Ownership
-
-The candidate demonstrates:
-
-- Comfort
-- Consistency
-- Intentionality
-
-The behavior appears normal rather than exceptional.
-
-Ownership represents deeper integration of the competency.
-
-## Evaluation Outcomes
-
-The program recognizes two outcomes.
-
-### Ready
-
-Competency demonstrated.
-
-### Not Yet
-
-Competency not yet demonstrated.
-
-Not Yet is developmental.
-
-Not Yet is not rejection.
-
-# Evaluator Skill Domains
-
-The Evaluator Skill Domains represent practical applications of the Evaluator Competency Model.
-
-Domains describe what Evaluators do.
-
-Competencies describe the capabilities that allow them to do it effectively.
-
-## Domain-to-Competency Mapping
-
-| Domain | Primary Competencies |
-| --- | --- |
-| Observation | Objectivity, Observation |
-| Competency Recognition | Observation, Judgment |
-| Standards Application | Objectivity, Standards Discipline |
-| Sign-Off Decisions | Judgment, Stewardship |
-| Coaching | Development, Judgment |
-
-# Observation Domain
-
-Purpose:
-
-Observe accurately.
-
-Observation allows the Evaluator to:
-
-- Identify risk
-- Assess competency
-- Guide development
-
-Accurate observation protects both standards and people.
 
 #### EVAL-OBS-002
 
@@ -4172,17 +4154,14 @@ Primary Failure:
 
 Failing to recognize dangerous behavior that places the candidate or others at risk.
 
-# Competency Recognition Domain
+
+### Competency Recognition Skills
 
 Purpose:
 
 Recognize demonstrated competency accurately and consistently.
 
-## Core Principle
-
-Evaluators certify competency, not perfection.
-
-Evaluators certify demonstrated competency, not future potential.
+Core principle: Evaluators certify competency, not perfection. Evaluators certify demonstrated competency, not future potential.
 
 #### EVAL-CMP-001
 
@@ -4218,11 +4197,28 @@ Primary Failures:
 - Certifying reputation
 - Certifying isolated success
 
-# Standards Application Domain
+
+### Standards Application Skills
 
 Purpose:
 
 Apply published standards consistently, objectively, and professionally.
+
+#### EVAL-STD-001
+
+Apply published standards consistently and independently of personal preference, convenience, or external pressure.
+
+##### Student Explanation
+
+Standards only remain meaningful if they are applied consistently.
+
+##### Evaluator Guidance
+
+A useful self-check is:
+
+Am I applying the published standard, or my personal version of the standard?
+
+Evaluators help candidates reach the standard rather than moving the standard to reach the candidate.
 
 #### EVAL-STD-002
 
@@ -4252,11 +4248,44 @@ Primary Failures:
 - Raising standards for disfavored candidates
 - Allowing evaluator drift
 
-# Sign-Off Decisions Domain
+
+### Sign-Off Decisions Skills
 
 Purpose:
 
 Make responsible certification decisions based upon demonstrated competency and observable evidence.
+
+#### EVAL-JDG-001
+
+Exercise sound judgment by accurately distinguishing between imperfections, deficiencies, competency gaps, and meaningful risks.
+
+##### Student Explanation
+
+Not every mistake is a failure.
+
+Not every imperfection is a deficiency.
+
+Not every deficiency creates unacceptable risk.
+
+##### Evaluator Guidance
+
+A useful question is:
+
+Does this issue meaningfully affect the candidate’s ability to safely exercise the privileges associated with this certification?
+
+#### EVAL-STW-001
+
+Protect the integrity of the progression system by preserving standards, consistency, and institutional knowledge.
+
+##### Student Explanation
+
+Evaluators are responsible for more than individual certification decisions.
+
+##### Evaluator Guidance
+
+A useful self-check is:
+
+If every Evaluator made this decision the way I am making it now, what would happen to the standard over time?
 
 #### EVAL-SGN-001
 
@@ -4286,11 +4315,24 @@ Primary Failures:
 - Certifying insufficient evidence
 - Avoiding difficult decisions
 
-# Coaching Domain
+
+### Coaching Skills
 
 Purpose:
 
 Support candidate development while preserving standards.
+
+#### EVAL-DEV-001
+
+Support candidate growth through clear feedback, meaningful guidance, and actionable developmental direction.
+
+##### Student Explanation
+
+Even when a candidate receives a Not Yet outcome, they should leave with greater clarity about how to improve.
+
+##### Evaluator Guidance
+
+A Not Yet outcome should create clarity rather than confusion.
 
 #### EVAL-COA-001
 
@@ -4319,7 +4361,8 @@ Primary Failures:
 - Failing to explain deficiencies
 - Creating confusion about expectations
 
-# Evaluation Criteria
+
+## Evaluation Criteria
 
 Evaluator certification requires demonstration of competency in:
 
@@ -4340,7 +4383,8 @@ Certification additionally requires:
 
 Certification decisions should be evidence-based.
 
-# Privileges
+
+## Privileges
 
 An Evaluator may:
 
@@ -4353,7 +4397,8 @@ An Evaluator may:
 - Participate in standards discussions
 - Escalate standards questions to Examiners
 
-# Restrictions
+
+## Restrictions
 
 An Evaluator may not:
 
@@ -4365,7 +4410,8 @@ An Evaluator may not:
 - Override Examiner authority
 - Unilaterally resolve unresolved standards disputes
 
-# Advancement Path
+
+## Advancement Path
 
 Eligible to pursue:
 
@@ -4379,51 +4425,434 @@ Advancement should focus on:
 - Development of other Evaluators
 - Long-term preservation of program integrity
 
-# Evaluator Status Summary
 
-## Fully Defined
+## Duplication Audit
 
-- Purpose
-- Intent Statement
-- Responsibility
-- Selection Model
-- Development Entry
-- Authority Model
-- Competency Model
-- Evaluation Philosophy
-- Observation Domain
-- Competency Recognition Domain
-- Standards Application Domain
-- Sign-Off Decisions Domain
-- Coaching Domain
-- Evaluation Criteria
-- Privileges
-- Restrictions
-- Advancement Path
+### Expanded Competencies
 
-## Not Yet Defined
+- Judgment (from Lead 4 integrated leadership judgment).
+- Participant assessment (from Lead 3 and Lead 4).
+- Developmental feedback (from Lead 4 debriefing).
+- Communication.
+- Professional conduct.
 
-- Examiner
+### New Competencies
+
+- Objective evidence evaluation.
+- Structured observation.
+- Competency recognition.
+- Standards application without modification.
+- Ready and Not Yet decision making.
+- Certification responsibility and sign-off.
+- Coaching within an evaluation context.
+- Standards escalation.
+
+## Defining Question
+
+Can I develop people while protecting standards?
+
 
 # Examiner
 
 ## Status
 
-Not Yet Defined
+Operationally Complete
 
-The Examiner level has accepted philosophical foundations but has not yet received a complete operational definition.
+## Development Theme
 
-Future versions shall define:
+Institutional Stewardship
 
-- Intent Statement
-- Responsibilities
-- Authority
-- Knowledge
-- Skills
-- Evaluation Criteria
-- Privileges
-- Restrictions
-- Advancement Path
+An Examiner stewards the progression system itself: the evaluators who apply its standards, the consistency of that application, and the integrity of the standards over time.
+
+## Intent Statement
+
+The Examiner level represents acceptance of responsibility for the progression system as a whole.
+
+An Examiner develops evaluators, certifies evaluators, interprets standards, resolves standards disputes, and participates in the stewardship and evolution of the program.
+
+Where an Evaluator protects standards one candidate at a time, an Examiner protects the standards themselves.
+
+When an Examiner certifies an Evaluator, they are making a professional endorsement.
+
+I am willing to personally stand behind the statement that this individual will develop people and protect standards with the objectivity, judgment, and consistency this program requires.
+
+The Examiner level is not a reward for seniority, reputation, or contribution.
+
+It is the acceptance of responsibility for everything the progression system exists to protect.
+
+## Core Development Goal
+
+Demonstrate the ability to develop and certify evaluators, apply and interpret standards consistently, resolve disputes objectively, and preserve the integrity of the progression system over time.
+
+## Responsibility
+
+Develop evaluators and protect standards.
+
+Neither responsibility may be neglected.
+
+An Examiner who protects standards but fails to develop evaluators starves the program of the people who sustain it.
+
+An Examiner who develops evaluators but fails to protect standards certifies the erosion of the system itself.
+
+## Prerequisites
+
+Required
+
+- Evaluator Certification
+- Selection for Examiner development
+
+## Selection
+
+Selection answers the question:
+
+Should this individual begin Examiner development?
+
+Selection is not certification.
+
+Selection grants opportunity.
+
+Certification grants authority.
+
+Examiner candidates are selected by existing Examiners.
+
+Common indicators include:
+
+- Demonstrated objectivity as an Evaluator
+- Consistency of standards application
+- Sound resolution of difficult sign-off decisions
+- Respect earned through stewardship rather than status
+- Genuine investment in the development of other evaluators
+
+### Founding Examiners
+
+The initial Examiners are seeded by appointment of the program owner.
+
+This appointment mechanism exists solely to establish the program.
+
+Once founding Examiners are certified, all subsequent Examiner selection and certification occurs through the processes defined in this section, and the founding appointment authority is retired.
+
+## Authority
+
+An Examiner may certify evaluators, interpret standards, resolve standards disputes, and participate in the stewardship and evolution of the progression system.
+
+Interpretation is not modification.
+
+An Examiner clarifies what a standard means and how it applies.
+
+Changing what a standard requires occurs only through the specification change process defined in Part V.
+
+## Knowledge
+
+### Evaluator Development
+
+- How evaluators are selected, developed, and certified.
+- The Evaluator Competency Model.
+- Common evaluator failure modes, including gatekeeping, cheerleading, and drift.
+
+### Standards and Rationale
+
+- Published standards across all levels.
+- The design decisions and rationale behind standards.
+- The distinction between interpretation and modification.
+- The specification change process.
+
+### Consistency and Drift
+
+- How standards application drifts across evaluators and over time.
+- Recognizing inconsistency between evaluators.
+- Calibration methods.
+
+### Dispute Resolution
+
+- Sources of standards disputes.
+- Objective dispute-resolution practice.
+- Documentation of interpretations and outcomes.
+- Conflict-of-interest recognition.
+
+### Program Stewardship
+
+- The constitutional principles of the program.
+- Governance principles and change control.
+- The long-term consequences of certification decisions.
+
+## Skills
+
+### Evaluator Development Skills
+
+#### EXAM-DEV-001
+
+Develop Evaluator candidates from selection through certification.
+
+##### Student Explanation
+
+Examiners are responsible for producing the program's evaluators.
+
+Development includes structured observation opportunities, calibration against standards, and honest feedback throughout the candidate's progression.
+
+A certified Evaluator who was poorly developed is an Examiner failure, not merely a candidate failure.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to plan and conduct Evaluator development, not merely assess its endpoint.
+
+The evaluating Examiner should assess whether candidates developed under this person evaluate consistently and objectively.
+
+Duplication Audit: 🔵 Expanded from Evaluator
+
+#### EXAM-DEV-002
+
+Provide calibration feedback to certified Evaluators.
+
+##### Student Explanation
+
+Evaluator development does not end at certification.
+
+Examiners monitor how evaluators apply standards and provide feedback that keeps evaluation consistent across the program.
+
+Calibration protects candidates from receiving different standards depending on which Evaluator they draw.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to identify inconsistency between evaluators and address it constructively.
+
+The evaluating Examiner should assess whether feedback preserves the evaluator's dignity while correcting the drift.
+
+Duplication Audit: 🟢 New
+
+### Evaluator Certification Skills
+
+#### EXAM-CRT-001
+
+Determine whether an Evaluator candidate has demonstrated the competencies required for certification.
+
+##### Student Explanation
+
+Certifying an evaluator is the highest-leverage decision in the program.
+
+Every candidate that evaluator later certifies inherits the quality of this decision.
+
+The question is not whether the candidate is skilled, respected, or committed.
+
+The question is whether the evidence demonstrates the six Evaluator competencies.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate evidence-based Evaluator certification decisions.
+
+The evaluating Examiner should assess whether the candidate applies to evaluator certification the same objectivity the program demands of evaluators themselves.
+
+Duplication Audit: 🔵 Expanded from Evaluator
+
+#### EXAM-CRT-002
+
+Accept responsibility for Evaluator certification decisions.
+
+##### Student Explanation
+
+An Examiner stands behind every evaluator they certify.
+
+If a certified evaluator applies standards poorly, the Examiner who certified them shares responsibility for the outcome and for the correction.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate ownership of certification outcomes, including willingness to address problems with evaluators they certified.
+
+The evaluating Examiner should assess whether the candidate treats certification as an endorsement or as a transaction.
+
+Duplication Audit: 🔵 Expanded from Evaluator
+
+### Standards Stewardship Skills
+
+#### EXAM-STD-001
+
+Interpret published standards consistently with their documented rationale.
+
+##### Student Explanation
+
+Standards cannot anticipate every situation.
+
+When interpretation is required, the Examiner's obligation is to the documented rationale behind the standard, not to personal preference or convenience.
+
+The Design Decision Register exists so that interpretation has something to stand on.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate interpretations grounded in documented rationale.
+
+The evaluating Examiner should assess whether interpretations would be reproducible by another Examiner reading the same rationale.
+
+Duplication Audit: 🟢 New
+
+#### EXAM-STD-002
+
+Distinguish standards interpretation from standards modification.
+
+##### Student Explanation
+
+Interpretation clarifies what a standard means.
+
+Modification changes what it requires.
+
+The moment an interpretation would change an outcome the written standard clearly prescribes, it has become a modification and belongs in the change process.
+
+Examiners who modify standards through interpretation erode the system silently.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate recognition of the boundary, including cases where they declined to stretch an interpretation and escalated to the change process instead.
+
+The evaluating Examiner should treat boundary violations as disqualifying evidence, not stylistic differences.
+
+Duplication Audit: 🟢 New
+
+#### EXAM-STD-003
+
+Monitor consistency of standards application across evaluators and over time.
+
+##### Student Explanation
+
+Drift is gradual and invisible from inside a single evaluation.
+
+Examiners watch the pattern: whether evaluators are certifying to the same standard as each other and as last season.
+
+Detecting drift early is far cheaper than correcting a cohort certified against an eroded standard.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to detect inconsistency using evidence across multiple evaluations rather than single anecdotes.
+
+The evaluating Examiner should assess whether the candidate distinguishes drift from acceptable evaluator judgment.
+
+Duplication Audit: 🟢 New
+
+### Dispute Resolution Skills
+
+#### EXAM-DSP-001
+
+Resolve standards disputes objectively and document the outcome.
+
+##### Student Explanation
+
+When evaluators, candidates, or leaders disagree about what a standard requires, the Examiner resolves the dispute based on the standard and its rationale, not on the people involved.
+
+Documented resolutions become interpretive record; undocumented ones become folklore.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate dispute resolution that all parties can trace to the standard, and written documentation of the outcome.
+
+The evaluating Examiner should assess whether the candidate recuses themselves from disputes in which they are a party.
+
+Duplication Audit: 🟢 New
+
+### Program Stewardship Skills
+
+#### EXAM-STW-001
+
+Escalate standards issues requiring formal change through the specification change process.
+
+##### Student Explanation
+
+Examiners see the standards under load and are usually the first to know when a standard is wrong, incomplete, or outdated.
+
+The stewardship obligation is to carry that knowledge into the change process, with rationale, rather than working around the standard informally.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate the ability to convert operational observations into well-formed change proposals.
+
+The evaluating Examiner should assess whether proposals preserve constitutional principles and include documented rationale.
+
+Duplication Audit: 🟢 New
+
+#### EXAM-PRO-001
+
+Demonstrate humility, impartiality, and professional conduct.
+
+##### Student Explanation
+
+Examiner is the terminal level, and terminal levels attract ego.
+
+The Examiner's authority exists to serve the program, not to elevate the person holding it.
+
+An Examiner who uses standards, interpretation, or certification authority to build personal status has inverted the role.
+
+##### Evaluator Guidance
+
+The candidate should demonstrate impartiality and humility as observed patterns across their Evaluator and Examiner development history.
+
+The evaluating Examiner should weigh how the candidate handles being wrong; status-seeking or retaliatory behavior is disqualifying at this level.
+
+Duplication Audit: 🔵 Expanded from Lead 4
+
+## Evaluation Criteria
+
+1. Demonstration of required knowledge.
+2. Demonstration of required skills.
+3. Demonstration of objectivity and consistency as a certified Evaluator.
+4. Demonstration of evidence-based Evaluator certification decision making.
+5. Demonstration of the boundary between interpretation and modification.
+6. Demonstration of objective dispute resolution.
+7. Demonstration of humility, impartiality, and professional conduct.
+8. Certification by an existing Examiner, or founding appointment by the program owner.
+
+## Privileges
+
+- Exercise all Evaluator privileges.
+- Select individuals for Examiner development.
+- Develop and certify Evaluator candidates.
+- Provide calibration feedback to certified Evaluators.
+- Interpret published standards.
+- Resolve standards disputes.
+- Document authoritative interpretations.
+- Propose standards changes through the specification change process.
+- Certify Examiner candidates.
+
+## Restrictions
+
+An Examiner may not:
+
+- Modify published standards outside the specification change process.
+- Grant authority not defined by the program.
+- Certify evaluators or examiners without sufficient evidence.
+- Resolve disputes in which they are a party.
+- Use interpretation to change what a standard requires.
+- Override constitutional principles.
+
+## Advancement Path
+
+None.
+
+The Examiner level is the terminal level of the Movement Progression Framework.
+
+There is no level above Examiner.
+
+Continued development at this level takes the form of deepened stewardship: better evaluators, more consistent standards, and a stronger program, consistent with the Stewardship Over Status principle (ID-008).
+
+## Duplication Audit
+
+### Expanded Competencies
+
+- Evidence-based evaluation.
+- Sign-off responsibility.
+- Objectivity.
+- Developmental feedback and coaching.
+- Standards discipline.
+- Professional conduct.
+
+### New Competencies
+
+- Evaluator development and calibration.
+- Evaluator certification.
+- Standards interpretation.
+- Interpretation-versus-modification discipline.
+- Consistency and drift monitoring.
+- Formal dispute resolution.
+- Change process participation.
+
+## Defining Question
+
+Can I be trusted with the standards themselves?
 
 ---
 
@@ -4818,6 +5247,7 @@ The purpose is to preserve program history and decision traceability.
 | 0.9 | Added DD-026 (Evaluator Competency Model). Integrated the Evaluator Competency Model, full Evaluator Skill Domains (Observation, Competency Recognition, Standards Application, Sign-Off Decisions, Coaching), Domain-to-Competency Mapping, Evaluation Criteria, Privileges, Restrictions, and Advancement Path into Part IV. Evaluator status elevated to Operationally Complete. Added Appendix I-A (Evaluator Competency Reference) and updated Appendix I, Appendix J, and Appendix K maturity assessments. |
 | 0.10 | Integrated the complete Lead 4 level (Demonstrated Discernment), completing the Leadership Tier. Added the Implementation Discoveries section to Part I (ID-001 through ID-009 and the Framework Mission Statement), recording the constitutional principles verified during implementation. Rewrote the Leader Tier overview to define leadership, establish the tier architecture, and explain developmental guardrails. Added Change Review Safeguards to Part V (constitutional precedence, development theme protection, privilege change review, restriction removal review, competency identifier freeze, appendix growth principle). Corrected the Current Program Status, Appendix A Responsibility Ladder, Appendix J Future Work Registry, and Appendix K Maturity Assessment, which had not been updated as Group and Lead 1–3 were implemented. Normalized all completed level statuses to Operationally Complete. Added Prerequisites sections to Lead 1–4 per the Level Architecture. Restored the Student Explanation and Evaluator Guidance layers for all Lead 1 and Lead 2 skills, which had been dropped during earlier consolidation. Added the Skill Formatting Standard to Part II and normalized skill formatting across all levels (categories at heading level three, skill identifiers at heading level four, requirement layers at heading level five). Removed PP-002 through PP-004 as duplicates of FP-004 through FP-006 and retired those identifiers. Added Duplication Audits to Lead 3 and Lead 4. Expanded the Appendix C Authority Matrix to match the Part I Authority Model. |
 | 0.11 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all Lead 3 and Lead 4 skills with per-skill duplication classifications, completing three-layer requirement coverage across the Flyer and Leader Tiers. Corrected the Lead 3 Duplication Audit (staged breakoff implementation moved to Lead 4). Replaced all em dashes with standard punctuation throughout the specification. |
+| 0.12 | Restructured the Evaluator level to full Level Architecture compliance: all sections nested under the level, all 27 skills consolidated under a single Skills section organized by domain, competency exemplar skills relocated to matching domains, and Knowledge, Development Theme, Prerequisites, Duplication Audit, and Defining Question sections added. Removed the redundant Evaluator Status Summary. Authored and integrated the complete Examiner operational definition: Intent Statement, Responsibility, Prerequisites, Selection with founding appointment clause, Authority, Knowledge, ten fully layered EXAM skills, Evaluation Criteria, Privileges, Restrictions, terminal Advancement Path, Duplication Audit, and Defining Question. Development Theme: Institutional Stewardship. Updated the Current Program Status, Appendix J, and Appendix K to reflect a fully defined progression from Solo through Examiner. |
 
 # Current Program Status
 
@@ -4832,20 +5262,16 @@ Implemented:
 - Lead 2 (Operationally Complete)
 - Lead 3 (Operationally Complete)
 - Lead 4 (Operationally Complete)
-- EE Tier Foundation
 - Evaluator (Operationally Complete)
+- Examiner (Operationally Complete)
 
-Partially Implemented:
+Remaining Definition Work:
 
-- Examiner (philosophical foundations only)
+- Student Explanation and Evaluator Guidance layers for the Evaluator domain skills
 
-Not Yet Defined:
+Every level of the progression is now defined, from Solo through Examiner.
 
-- Examiner (operational definition)
-
-The Flyer Tier and Leader Tier are complete. The progression now forms an unbroken developmental ladder from Solo through Lead 4 into the Evaluator level.
-
-The program should be considered architecturally closed. Future development should focus on the Examiner operational definition, external expert review, and derivative materials rather than new architectural concepts.
+The program should be considered architecturally closed and operationally complete. Future development should focus on completing the remaining Evaluator skill layers, external expert review, operational validation, and derivative materials rather than new architectural concepts.
 
 ---
 
@@ -5195,23 +5621,13 @@ Lead 1 through Lead 4 are fully defined and Operationally Complete. External exp
 
 Status: Operationally Complete
 
-The Evaluator level is operationally complete as of v0.9. Its Competency Model, skill domains, evaluation criteria, privileges, restrictions, and advancement path are fully defined.
+The Evaluator level is fully restructured to the Level Architecture as of v0.12. Remaining work: Student Explanation and Evaluator Guidance layers for the domain skills.
 
 ## Examiner
 
-Status: Not Yet Defined
+Status: Operationally Complete
 
-Entire operational definition pending, including:
-
-- Intent Statement
-- Responsibilities
-- Authority
-- Knowledge
-- Skills
-- Evaluation Criteria
-- Privileges
-- Restrictions
-- Advancement Path
+The Examiner level received its complete operational definition in v0.12, including Intent Statement, Responsibility, Prerequisites, Selection (with founding appointment clause), Authority, Knowledge, Skills, Evaluation Criteria, Privileges, Restrictions, terminal Advancement Path, and Duplication Audit.
 
 ## Provisional Decisions
 
@@ -5236,27 +5652,22 @@ Future review required:
 | Group | Complete |
 | Lead 1–4 | Complete |
 | Evaluator | Complete |
-| Examiner | Pending |
+| Examiner | Complete |
 
-## Evaluator Foundation Status
+## EE Tier Status
 
-Status: Substantially Defined
+Status: Operationally Complete
 
 Remaining Work:
 
-- Examiner operational definition
-- Examiner competencies
-- Examiner evaluation criteria
-- Examiner privileges
-- Examiner restrictions
-- Examiner advancement architecture
+- Student Explanation and Evaluator Guidance layers for the Evaluator domain skills
 
 ## Current Assessment
 
 The program architecture is closed.
 
-The Flyer Tier, Leader Tier, and Evaluator level are complete. The specification now defines an unbroken developmental progression from Solo through Evaluator.
+Every level is defined: Solo, Group, Lead 1 through Lead 4, Evaluator, and Examiner. The specification defines an unbroken developmental progression from first movement jump through terminal stewardship of the program itself.
 
-The primary remaining work is the Examiner operational definition, external expert review of the Leader Tier draft levels, and the development of derivative materials.
+The primary remaining work is the Evaluator domain skill layers, external expert review, and the development of derivative materials.
 
-Future development should prioritize completion and validation rather than expansion of architectural concepts.
+Future development should prioritize validation rather than expansion of architectural concepts.
