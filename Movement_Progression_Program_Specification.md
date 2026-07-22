@@ -1,10 +1,10 @@
 # Movement Progression Program Specification
 
-## Version 1.0: Master Specification
+## Version 1.1: Master Specification
 
 ### Status
 
-Authoritative v1.0 Release
+Authoritative v1.1 Release
 
 ### Purpose
 
@@ -17,6 +17,8 @@ All future program materials, training resources, evaluation systems, software t
 This document is intended to preserve not only standards, but also the reasoning and design decisions that produced those standards.
 
 This v1.0 release integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
+
+This v1.1 release completes the requirement category registry, ratifies the safety-critical requirement classification as DD-027, establishes a permanent direct appointment path to the EE Tier as DD-028, and resolves ambiguities identified during the implementation of derivative software.
 
 ---
 
@@ -312,6 +314,8 @@ Develop safe movement jump leaders.
 
 ## EE Tier
 
+EE denotes Evaluator and Examiner, the two levels of the tier.
+
 ### Purpose
 
 Develop and maintain safe progression standards.
@@ -437,7 +441,7 @@ Every design decision should preserve:
 
 Titles alone are insufficient.
 
-(DD-001 through DD-026, CDD-001 through CDD-004, are defined in Part IA: Design Decision Register.)
+(DD-001 through DD-028, CDD-001 through CDD-004, are defined in Part IA: Design Decision Register.)
 
 ---
 
@@ -981,6 +985,69 @@ Evaluator domains are expressions of these competencies.
 
 Evaluator certification should assess competency rather than task completion alone.
 
+# DD-027: Safety-Critical Requirement Classification
+
+### Status
+
+Accepted
+
+### Rationale
+
+Requirements do not carry equal consequence.
+
+A requirement whose absence creates immediate risk to the candidate or to others is different in kind from a requirement whose absence indicates incomplete development.
+
+Recording that difference in requirement metadata allows evaluators to direct attention appropriately and allows the evaluation record to distinguish a developmental gap from a safety event.
+
+This classification was adopted provisionally as CDD-003 and is ratified here following operational implementation.
+
+### Implications
+
+Every requirement carries one of two classifications:
+
+- Safety Critical
+- Standard
+
+The classification does not affect whether a requirement must be met.
+
+Every published requirement must be met for certification, as established by DD-014 and reinforced by the Evaluator standards application skills. There are no optional requirements and there is no partial certification.
+
+The classification affects consequence:
+
+- A Not Yet outcome on a Safety Critical requirement ends the evaluation. The jump is recorded as a coaching jump rather than an evaluation.
+- A Not Yet outcome on a Standard requirement identifies a competency to be developed and re-demonstrated. The evaluation continues.
+
+Classification is a property of the requirement and is authored within this specification.
+
+Classification is distinct from the evaluator's per-observation judgment between a deficiency and an imperfection, which is governed by the privilege-relevance test defined in EVAL-STD-004 and EVAL-JDG-001.
+
+# DD-028: Direct Appointment To The EE Tier
+
+### Status
+
+Accepted
+
+### Rationale
+
+The progression path to the EE Tier requires Lead 4 certification, which requires the full Flyer and Leader Tier progression.
+
+Experienced coaches, instructors, and evaluators from outside the program may already possess the competencies the EE Tier requires, demonstrated through prior work rather than through this progression. Requiring them to repeat a progression whose competencies they have already demonstrated would serve neither safety nor development, and would prevent the program from growing its evaluator base.
+
+A permanent appointment path is therefore required.
+
+Making that path explicit is safer than allowing it to exist informally. An undocumented route around the standards is the drift the governance model exists to prevent.
+
+Appointment substitutes the source of the evidence. It does not remove the requirement for evidence.
+
+### Implications
+
+- Direct appointment to Evaluator or Examiner may be granted by an Examiner or by the program owner.
+- Appointment requires documented rationale identifying the evidence relied upon and the competencies that evidence demonstrates.
+- Appointment without documented rationale is a governance violation.
+- An appointed Evaluator or Examiner holds the same authority and the same restrictions as one certified through the progression.
+- Appointment records are retained as part of the program record.
+- This decision supersedes the retirement clause of the founding appointment provision. The founding appointment mechanism and the permanent appointment path are the same mechanism.
+
 # Provisional Decisions
 
 The following decisions are accepted provisionally and may be revised in future versions.
@@ -1007,7 +1074,9 @@ Status: Accepted (Provisional)
 
 Requirement metadata may eventually include safety-critical designation.
 
-Status: Accepted (Provisional)
+Status: Superseded by DD-027
+
+Ratified as DD-027 in v1.1 following operational implementation. Retained for historical context per the Design Decision Lifecycle.
 
 # CDD-004: Evaluator Candidate Development Stage
 
@@ -1263,6 +1332,17 @@ Examples:
 
 The competency itself.
 
+### Safety Critical Classification
+
+Every requirement carries one of two classifications, as established by DD-027:
+
+- Safety Critical
+- Standard
+
+The classification affects the consequence of a Not Yet outcome.
+
+It does not affect whether a requirement must be met.
+
 ## Optional Metadata
 
 The following metadata are accepted but not yet mandatory.
@@ -1273,13 +1353,6 @@ Examples:
 
 - Technical
 - Responsibility
-
-### Safety Critical Flag
-
-Examples:
-
-- Safety Critical
-- Standard
 
 ### Training References
 
@@ -1293,21 +1366,37 @@ Links to evaluator guidance.
 
 The following categories are currently recognized.
 
-| Code | Category |
-| --- | --- |
-| HDG | Heading Skills |
-| FLT | Flight Skills |
-| KNW | Knowledge |
-| LRN | Learning Skills |
-| SLT | Slot Skills |
-| LDR | Leadership Skills |
-| BRF | Briefing Skills |
-| DBR | Debrief Skills |
-| OBS | Observation Skills |
-| CMP | Competency Recognition |
-| EVL | Evaluation Skills |
+| Code | Category | First Used |
+| --- | --- | --- |
+| HDG | Heading Skills | Solo |
+| FLT | Flight Skills | Solo |
+| LRN | Learning Skills | Solo |
+| RSK | Risk Management Skills | Solo |
+| SLT | Slot Skills | Group |
+| OBS | Observation Skills | Group |
+| PLN | Planning Skills | Lead 1 |
+| BRF | Briefing Skills | Lead 1 |
+| LDR | Leadership Skills | Lead 1 |
+| DBR | Debrief Skills | Lead 1 |
+| FRM | Formation Skills | Lead 2 |
+| COM | Communication Skills | Lead 2 |
+| MGT | Formation Management Skills | Lead 2 |
+| EXE | Execution Skills | Lead 2 |
+| DEV | Development Skills | Lead 4 |
+| PRO | Professional Conduct | Lead 4 |
+| OBJ | Objectivity | Evaluator |
+| CMP | Competency Recognition | Evaluator |
+| STD | Standards Application | Evaluator |
+| JDG | Judgment | Evaluator |
+| STW | Stewardship | Evaluator |
+| SGN | Sign-Off Decisions | Evaluator |
+| COA | Coaching Skills | Evaluator |
+| CRT | Certification Skills | Examiner |
+| DSP | Dispute Resolution Skills | Examiner |
 
 Additional categories may be added when justified.
+
+The category codes KNW and EVL were listed in earlier versions but were never assigned to a requirement. Both are retired and will not be reassigned. Knowledge requirements are documented in each level's Knowledge section rather than as identified skills, and evaluation skills are classified under the specific Evaluator categories above.
 
 # Duplication Audit Architecture
 
@@ -2066,6 +2155,7 @@ A Group flyer may:
 
 - Participate in organized movement jumps with a qualified leader.
 - Occupy assigned slots within approved movement formations.
+- Participate in angle jumps within an organized movement group led by a qualified leader.
 - Pursue Lead 1 certification.
 
 ## Restrictions
@@ -2522,7 +2612,7 @@ Leadership includes the willingness to have uncomfortable conversations when saf
 
 - Lead movement jumps involving more than one follower.
 - Organize or lead larger movement groups.
-- Introduce back flying on a movement jump.
+- Introduce back flying or back tracking on a movement jump.
 - Evaluate other participants.
 - Sign off progression requirements.
 
@@ -3322,7 +3412,7 @@ Required
 
 - Lead 3 Certification
 
-## Privilege
+## Defining Privilege
 
 A Lead 4 flyer may independently determine the appropriate structure, complexity, and execution of movement jumps based upon participant competency, environmental conditions, and operational considerations.
 
@@ -3831,6 +3921,8 @@ Required
 
 - Lead 4 Certification
 - Selection for Evaluator development
+
+Or direct appointment under DD-028.
 
 ## Selection
 
@@ -4769,8 +4861,8 @@ An Evaluator may:
 
 - Evaluate candidates against published standards
 - Issue Ready and Not Yet outcomes
-- Certify competency within authorized levels
-- Sign off progression requirements within authorized levels
+- Certify competency at Solo, Group, Lead 1, Lead 2, Lead 3 and Lead 4
+- Sign off progression requirements at those levels
 - Provide official developmental feedback
 - Recommend individuals for Evaluator development
 - Participate in standards discussions
@@ -4783,7 +4875,7 @@ An Evaluator may not:
 
 - Modify published standards
 - Create new certification requirements
-- Grant authority outside authorized levels
+- Certify Evaluator or Examiner candidates
 - Certify competency without sufficient evidence
 - Certify potential in place of demonstrated competency
 - Override Examiner authority
@@ -4880,6 +4972,8 @@ Required
 - Evaluator Certification
 - Selection for Examiner development
 
+Or direct appointment under DD-028.
+
 ## Selection
 
 Selection answers the question:
@@ -4902,13 +4996,17 @@ Common indicators include:
 - Respect earned through stewardship rather than status
 - Genuine investment in the development of other evaluators
 
-### Founding Examiners
+### Appointment
 
 The initial Examiners are seeded by appointment of the program owner.
 
-This appointment mechanism exists solely to establish the program.
+Appointment is not limited to establishing the program. An Examiner or the program owner may appoint an individual directly to Evaluator or Examiner where that individual has demonstrated the required competencies through work outside this progression, as established by DD-028.
 
-Once founding Examiners are certified, all subsequent Examiner selection and certification occurs through the processes defined in this section, and the founding appointment authority is retired.
+Appointment requires documented rationale recording the evidence relied upon and the competencies that evidence demonstrates.
+
+Appointment without documented rationale is a governance violation.
+
+An appointed Evaluator or Examiner holds the same authority and the same restrictions as one certified through the progression.
 
 ## Authority
 
@@ -5325,6 +5423,12 @@ Evidence may include:
 - Structured discussion
 - Scenario evaluation
 
+## EE Tier
+
+The EE Tier comprises the Evaluator and Examiner levels.
+
+EE denotes Evaluator and Examiner.
+
 ## Examiner
 
 An Examiner is an individual responsible for developing evaluators and protecting standards at the program level.
@@ -5630,6 +5734,7 @@ The purpose is to preserve program history and decision traceability.
 | 0.11 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all Lead 3 and Lead 4 skills with per-skill duplication classifications, completing three-layer requirement coverage across the Flyer and Leader Tiers. Corrected the Lead 3 Duplication Audit (staged breakoff implementation moved to Lead 4). Replaced all em dashes with standard punctuation throughout the specification. |
 | 0.12 | Restructured the Evaluator level to full Level Architecture compliance: all sections nested under the level, all 27 skills consolidated under a single Skills section organized by domain, competency exemplar skills relocated to matching domains, and Knowledge, Development Theme, Prerequisites, Duplication Audit, and Defining Question sections added. Removed the redundant Evaluator Status Summary. Authored and integrated the complete Examiner operational definition: Intent Statement, Responsibility, Prerequisites, Selection with founding appointment clause, Authority, Knowledge, ten fully layered EXAM skills, Evaluation Criteria, Privileges, Restrictions, terminal Advancement Path, Duplication Audit, and Defining Question. Development Theme: Institutional Stewardship. Updated the Current Program Status, Appendix J, and Appendix K to reflect a fully defined progression from Solo through Examiner. |
 | 1.0 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all remaining Evaluator domain skills, completing three-layer requirement coverage for every skill in the specification. Consolidated EVAL-OBS-003 into EVAL-OBS-001 (duplicate requirements); the retired identifier will not be reassigned. Relocated domain-level Primary Failures blocks from within skill blocks to their category introductions for correct attribution. Added assessor-directed guidance to the six Evaluator competency exemplar skills, preserving their original self-check guidance. Completed Duplication Audit classification coverage for all skills, including the previously untagged Solo flight and learning skills. With every level defined and every requirement fully layered, this release constitutes the complete operational baseline defined by the Versioning Philosophy. |
+| 1.1 | Documented the sixteen requirement categories in use but absent from the registry, added a First Used column, and retired the unused KNW and EVL codes. Ratified CDD-003 as DD-027 (Safety-Critical Requirement Classification), establishing the Safety Critical and Standard classifications, promoting the classification to required metadata, and recording that classification affects the consequence of a Not Yet outcome rather than whether a requirement must be met. Added DD-028 (Direct Appointment To The EE Tier), replacing the founding-only appointment clause with a permanent documented appointment path and adding it to the Evaluator and Examiner prerequisites. Corrected the Lead 1 restriction to include back tracking, matching Solo, Group, and Lead 2. Granted angle jump participation at Group, resolving a restriction that was introduced at Solo and never lifted. Replaced the undefined phrase "within authorized levels" in the Evaluator privileges and restrictions with the explicit level list the Evaluation Criteria already determine. Retitled the duplicate Lead 4 Privilege heading to Defining Privilege. Expanded the EE abbreviation in Part I and added an EE Tier terminology entry. |
 
 # Current Program Status
 
@@ -5849,24 +5954,47 @@ EVAL-OBS-001
 
 ## Categories
 
-| Code | Meaning |
-| --- | --- |
-| HDG | Heading Skills |
-| FLT | Flight Skills |
-| KNW | Knowledge |
-| LRN | Learning Skills |
-| SLT | Slot Skills |
-| LDR | Leadership Skills |
-| BRF | Briefing Skills |
-| DBR | Debrief Skills |
-| OBS | Observation Skills |
-| CMP | Competency Recognition |
-| EVL | Evaluation Skills |
+| Code | Meaning | First Used |
+| --- | --- | --- |
+| HDG | Heading Skills | Solo |
+| FLT | Flight Skills | Solo |
+| LRN | Learning Skills | Solo |
+| RSK | Risk Management Skills | Solo |
+| SLT | Slot Skills | Group |
+| OBS | Observation Skills | Group |
+| PLN | Planning Skills | Lead 1 |
+| BRF | Briefing Skills | Lead 1 |
+| LDR | Leadership Skills | Lead 1 |
+| DBR | Debrief Skills | Lead 1 |
+| FRM | Formation Skills | Lead 2 |
+| COM | Communication Skills | Lead 2 |
+| MGT | Formation Management Skills | Lead 2 |
+| EXE | Execution Skills | Lead 2 |
+| DEV | Development Skills | Lead 4 |
+| PRO | Professional Conduct | Lead 4 |
+| OBJ | Objectivity | Evaluator |
+| CMP | Competency Recognition | Evaluator |
+| STD | Standards Application | Evaluator |
+| JDG | Judgment | Evaluator |
+| STW | Stewardship | Evaluator |
+| SGN | Sign-Off Decisions | Evaluator |
+| COA | Coaching Skills | Evaluator |
+| CRT | Certification Skills | Examiner |
+| DSP | Dispute Resolution Skills | Examiner |
+
+The category codes KNW and EVL are retired and will not be reassigned.
+
+## Required Metadata
+
+- Requirement ID
+- Level
+- Category
+- Requirement Text
+- Safety Critical Classification
 
 ## Optional Metadata
 
 - Requirement Type
-- Safety Critical Flag
 - Training References
 - Evaluation References
 
