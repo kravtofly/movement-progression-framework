@@ -1003,10 +1003,14 @@ This classification was adopted provisionally as CDD-003 and is ratified here fo
 
 ### Implications
 
-Every requirement carries one of two classifications:
+Every requirement within the Flyer Tier and the Leader Tier carries one of two classifications:
 
 - Safety Critical
 - Standard
+
+The classification applies to the Flyer and Leader Tiers only.
+
+EE Tier requirements are not classified. Evaluator and Examiner candidates are not evaluated through a single movement jump that can be discontinued, so the consequence rule below has no application there. Severity within the EE Tier is expressed through the Primary Failures recorded at each Evaluator skill domain.
 
 The classification does not affect whether a requirement must be met.
 
