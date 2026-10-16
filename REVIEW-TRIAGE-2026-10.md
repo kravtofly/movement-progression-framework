@@ -32,15 +32,17 @@ Safeguards that apply (Part V): privilege changes require Privilege Change Revie
 
 ## Theme A: Solo entry and solo privileges (safety, highest priority)
 
+> **Decided 2026-10-16 (v1.2, DD-029).** Solo is retired as the entry level and replaced by **Follow**: a flyer's first movement jumps are made with one leader holding Lead 1 or higher, and solo movement jumps become a **Lead 1 privilege**. The Solo skill IDs are retired in favour of `FOLLOW-*` IDs. Themes A and C are applied in v1.2; Themes B, D, E, F and G remain open.
+
 Both reviewers independently pushed to make Solo stricter. This is the single most consequential decision in the set.
 
 | # | Rev | Spec target | Comment (paraphrased) | Proposed | Notes | Decision |
 | --- | --- | --- | --- | --- | --- | --- |
-| A1 | TS | Solo › Prerequisites (A license, 25 jumps) | 25 jumps is too early to focus on tracking/angle; belly fundamentals are still being learned. Suggests ~50 jumps. | **Discuss** | Competency-based progression (FP-001) argues against leaning on jump numbers, but the 25 floor is itself a number. Options: raise to 50; keep 25 but gate the solo privilege (A2); or tie it to a demonstrated belly-skill baseline. | |
-| A2 | TS | Solo › Privileges ("Conduct solo belly-tracking jumps") | Solo tracking at low experience is dangerous and unverifiable: the evaluator can see the exit, not the flight path, and the jumper can't judge distance covered. First tracking jumps should be with an experienced jumper. | **Discuss** (lean Modify) | Strongest single comment. Possible shape: Solo certification is earned on coached jumps with an experienced flyer; unaccompanied solo tracking becomes a later privilege or needs N coached jumps first. Requires Privilege Change Review. | |
-| A3 | TS | Solo › Evaluation (flyer-q4) | Hard to verify a solo flyer kept a good flight path. | **Modify** | Folds into A2. If evaluation stays solo, require video showing the full flight path (wingsuit-style GPS or a camera flyer), not just the exit. | |
-| A4 | ZV | Solo › Prerequisites | Add the B-license canopy control course, given the added risk of landing away from the designated LZ. | **Discuss** | Ties a USPA course to the spec, so it's US-specific. Could be written as "a canopy course covering off-field landings (e.g. USPA B-license canopy course)". | |
-| A5 | ZV | Solo › Prerequisites or Knowledge | Require an audible altimeter and a freefly-friendly rig. | **Modify** | Accept as an **equipment requirement**. The spec has no equipment section today; add one at Solo (carried by every later level). Define "freefly-friendly" in Knowledge (closed-pin rig, secured handles/BOC, no loose flaps). | |
+| A1 | TS | Solo › Prerequisites (A license, 25 jumps) | 25 jumps is too early to focus on tracking/angle; belly fundamentals are still being learned. Suggests ~50 jumps. | **Discuss** | Competency-based progression (FP-001) argues against leaning on jump numbers, but the 25 floor is itself a number. Options: raise to 50; keep 25 but gate the solo privilege (A2); or tie it to a demonstrated belly-skill baseline. | Accepted, modified: USPA B License or equivalent (about 50 jumps, includes canopy proficiency); separate jump count dropped. See DD-029. |
+| A2 | TS | Solo › Privileges ("Conduct solo belly-tracking jumps") | Solo tracking at low experience is dangerous and unverifiable: the evaluator can see the exit, not the flight path, and the jumper can't judge distance covered. First tracking jumps should be with an experienced jumper. | **Discuss** (lean Modify) | Strongest single comment. Possible shape: Solo certification is earned on coached jumps with an experienced flyer; unaccompanied solo tracking becomes a later privilege or needs N coached jumps first. Requires Privilege Change Review. | Accepted, restructured: Follow replaces Solo; solo jumps become a Lead 1 privilege (DD-029). |
+| A3 | TS | Solo › Evaluation (flyer-q4) | Hard to verify a solo flyer kept a good flight path. | **Modify** | Folds into A2. If evaluation stays solo, require video showing the full flight path (wingsuit-style GPS or a camera flyer), not just the exit. | Resolved by DD-029: the leader is in the air for the full flight path; leader video is the preferred evidence. |
+| A4 | ZV | Solo › Prerequisites | Add the B-license canopy control course, given the added risk of landing away from the designated LZ. | **Discuss** | Ties a USPA course to the spec, so it's US-specific. Could be written as "a canopy course covering off-field landings (e.g. USPA B-license canopy course)". | Accepted via A1: the B License prerequisite includes canopy proficiency training. |
+| A5 | ZV | Solo › Prerequisites or Knowledge | Require an audible altimeter and a freefly-friendly rig. | **Modify** | Accept as an **equipment requirement**. The spec has no equipment section today; add one at Solo (carried by every later level). Define "freefly-friendly" in Knowledge (closed-pin rig, secured handles/BOC, no loose flaps). | Accepted: Required Equipment at Follow, applies at every later level; defined in Knowledge. |
 
 ## Theme B: Group (Flyer Tier) skills
 
@@ -58,11 +60,11 @@ Both reviewers independently pushed to make Solo stricter. This is the single mo
 
 | # | Rev | Spec target | Comment (paraphrased) | Proposed | Notes | Decision |
 | --- | --- | --- | --- | --- | --- | --- |
-| C1 | ZV | SOLO-FLT-001 (stable exit) | Can be any style of exit (belly, track, freestyle)? | **Accept** | Guidance: "Any exit style is acceptable if it is controlled and transitions promptly to the planned flight." | |
-| C2 | ZV | SOLO-FLT-002 (stable belly tracking) | Add glide-path control. | **Accept** | Add to guidance: controls glide path, not only body position. | |
-| C3 | ZV | SOLO-FLT-004 (deploy in intended area) | Add "at the intended altitude." | **Accept** | Requirement wording becomes "Deploy in the intended area at the intended altitude." | |
-| C4 | ZV | SOLO-HDG-001 (determine heading) | Heading is relative to the drift zone as well as jump run. | **Accept** | Student explanation: "relative to jump run and the drift zone." | |
-| C5 | ZV | SOLO-HDG-003 (maintain heading) | A **lack** of significant movement should also be investigated. | **Accept** | Add: "Absence of meaningful forward movement should also be investigated." | |
+| C1 | ZV | SOLO-FLT-001 (stable exit) | Can be any style of exit (belly, track, freestyle)? | **Accept** | Guidance: "Any exit style is acceptable if it is controlled and transitions promptly to the planned flight." | Accepted (FOLLOW-FLT-001). |
+| C2 | ZV | SOLO-FLT-002 (stable belly tracking) | Add glide-path control. | **Accept** | Add to guidance: controls glide path, not only body position. | Accepted (FOLLOW-FLT-002). |
+| C3 | ZV | SOLO-FLT-004 (deploy in intended area) | Add "at the intended altitude." | **Accept** | Requirement wording becomes "Deploy in the intended area at the intended altitude." | Accepted (FOLLOW-FLT-005). |
+| C4 | ZV | SOLO-HDG-001 (determine heading) | Heading is relative to the drift zone as well as jump run. | **Accept** | Student explanation: "relative to jump run and the drift zone." | Accepted (FOLLOW-HDG-001). |
+| C5 | ZV | SOLO-HDG-003 (maintain heading) | A **lack** of significant movement should also be investigated. | **Accept** | Add: "Absence of meaningful forward movement should also be investigated." | Accepted (FOLLOW-HDG-003). |
 
 ## Theme D: Readiness before Lead
 

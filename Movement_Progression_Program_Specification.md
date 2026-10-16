@@ -1,10 +1,10 @@
 # Movement Progression Program Specification
 
-## Version 1.1: Master Specification
+## Version 1.2: Master Specification
 
 ### Status
 
-Authoritative v1.1 Release
+Authoritative v1.2 Release
 
 ### Purpose
 
@@ -16,9 +16,11 @@ All future program materials, training resources, evaluation systems, software t
 
 This document is intended to preserve not only standards, but also the reasoning and design decisions that produced those standards.
 
-This v1.0 release integrates the complete Flyer and Leader Tiers (Solo through Lead 4), the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
+This v1.0 release integrates the complete Flyer and Leader Tiers, the Evaluator level, the constitutional Implementation Discoveries identified during development, and the governance safeguards required to maintain the framework over time.
 
 This v1.1 release completes the requirement category registry, ratifies the safety-critical requirement classification as DD-027, establishes a permanent direct appointment path to the EE Tier as DD-028, and resolves ambiguities identified during the implementation of derivative software.
+
+This v1.2 release replaces Solo with Follow as the entry level of the program, as established by DD-029, following the first round of expert review. A flyer's first movement jumps are now made with a qualified leader rather than alone. Solo movement jumps become a privilege of Lead 1. The release also raises the entry prerequisite to the USPA B License or equivalent, adds equipment prerequisites, and refines the wording of the entry-level skills.
 
 ---
 
@@ -260,7 +262,7 @@ Every level represents an increase in responsibility.
 
 | Level | Primary Responsibility |
 | --- | --- |
-| Solo | Manage yourself |
+| Follow | Manage yourself while following a leader |
 | Group | Manage your position within a group |
 | Lead 1 | Manage one other flyer |
 | Lead 2 | Manage a formation |
@@ -277,8 +279,8 @@ A recurring pattern exists throughout the progression system.
 
 | Transition | Responsibility Accepted |
 | --- | --- |
-| Non-Solo → Solo | Responsibility for planning and conducting safe personal movement jumps |
-| Solo → Group | Responsibility for safe participation within a movement group |
+| Non-Follow → Follow | Responsibility for your own safe flight on a movement jump led by a qualified leader |
+| Follow → Group | Responsibility for safe participation within a movement group |
 | Group → Leader Tier | Responsibility for the safety and management of other flyers |
 | Leader Tier → EE Tier | Responsibility for the progression and development of other flyers and the protection of standards |
 
@@ -296,7 +298,7 @@ Develop safe movement participants.
 
 ### Levels
 
-- Solo
+- Follow
 - Group
 
 ## Leader Tier
@@ -441,7 +443,7 @@ Every design decision should preserve:
 
 Titles alone are insufficient.
 
-(DD-001 through DD-028, CDD-001 through CDD-004, are defined in Part IA: Design Decision Register.)
+(DD-001 through DD-029, CDD-001 through CDD-004, are defined in Part IA: Design Decision Register.)
 
 ---
 
@@ -1052,6 +1054,42 @@ Appointment substitutes the source of the evidence. It does not remove the requi
 - Appointment records are retained as part of the program record.
 - This decision supersedes the retirement clause of the founding appointment provision. The founding appointment mechanism and the permanent appointment path are the same mechanism.
 
+# DD-029: Follow Replaces Solo As The Entry Level
+
+### Status
+
+Accepted
+
+### Rationale
+
+Through v1.1 the program began with Solo: a flyer's first certified movement jumps were made alone.
+
+The first round of expert review identified three problems with that entry point.
+
+A newly licensed flyer cannot yet judge distance covered in freefall, and has limited ability to recognize where they are relative to jump run, the drift zone, and other groups. An unaccompanied movement jump at that stage places the least experienced flyer in the airspace with the least support.
+
+An evaluator reviewing a solo jump can usually see the exit but not the full flight path. The competency the level certified could not be reliably observed.
+
+Every later level is built on the relationship between a leader and a follower. Starting alone and then joining a group taught the foundational skills in a setting the rest of the progression never uses.
+
+A flyer's first movement jumps are therefore made with a qualified leader. The leader carries responsibility for the plan. The flyer develops personal responsibility for their own flight inside that plan. The leader is present for the whole flight path and can provide evidence of it.
+
+Unaccompanied movement jumps require the ability to plan a movement jump independently, select a safe heading, and manage separation without support. Those competencies are demonstrated at Lead 1, where a flyer plans, briefs, and leads a jump for another flyer. Solo movement jumps therefore become a Lead 1 privilege.
+
+### Implications
+
+- Follow is the entry level of the Flyer Tier. Solo is retired as a level.
+- A Follow flyer participates in movement jumps with one leader holding Lead 1 certification or higher.
+- Conducting solo movement jumps is a Lead 1 privilege. Follow and Group flyers may not conduct solo movement jumps.
+- The entry prerequisite becomes the USPA B License, or an equivalent license from another national system. The B License includes canopy proficiency training, which matters because movement jumps make landing away from the designated landing area more likely, and it represents more freefall experience than the A License.
+- The separate jump-number prerequisite is removed. A license is a verifiable credential; a jump count alone is not.
+- The entry level adds equipment prerequisites that continue to apply at every subsequent level.
+- The Solo skill identifiers, SOLO-HDG-001 through SOLO-RSK-001, are retired and replaced by FOLLOW identifiers. The skills are now demonstrated while following a leader rather than alone, so they are new requirements rather than edits of the old ones. Retired identifiers are never reassigned.
+- Two skills are added at Follow, for maintaining position relative to the leader and for breaking off as briefed. They introduce the Following Skills category.
+- The Development Theme, Movement Foundations, is unchanged. Architectural review confirmed that it still explains why the entry level exists and justifies its restrictions.
+- Lead 1 was reviewed under Privilege Change Review. Its responsibility, evaluation criteria, restrictions, and advancement path already require independent jump planning, heading selection, and risk assessment, which exceed what a solo movement jump requires. The Lead 1 responsibility statement is extended to cover the flyer's own solo movement jumps. No other Lead 1 change is required.
+- Existing Solo certifications are carried forward as Follow certifications.
+
 # Provisional Decisions
 
 The following decisions are accepted provisionally and may be revised in future versions.
@@ -1305,13 +1343,13 @@ Unique identifier.
 
 Example:
 
-SOLO-HDG-001
+FOLLOW-HDG-001
 
 ### Level
 
 Examples:
 
-- Solo
+- Follow
 - Group
 - Lead 1
 - Evaluator
@@ -1372,10 +1410,11 @@ The following categories are currently recognized.
 
 | Code | Category | First Used |
 | --- | --- | --- |
-| HDG | Heading Skills | Solo |
-| FLT | Flight Skills | Solo |
-| LRN | Learning Skills | Solo |
-| RSK | Risk Management Skills | Solo |
+| HDG | Heading Skills | Follow |
+| FLT | Flight Skills | Follow |
+| FLW | Following Skills | Follow |
+| LRN | Learning Skills | Follow |
+| RSK | Risk Management Skills | Follow |
 | SLT | Slot Skills | Group |
 | OBS | Observation Skills | Group |
 | PLN | Planning Skills | Lead 1 |
@@ -1573,7 +1612,7 @@ Undefined levels do not inherit implied requirements, privileges, restrictions, 
 
 Develop safe movement participants.
 
-# Solo
+# Follow
 
 ## Status
 
@@ -1585,26 +1624,27 @@ Movement Foundations
 
 ## Intent Statement
 
-Solo is the entry point into the Movement Progression Program.
+Follow is the entry point into the Movement Progression Program.
 
-It represents a flyer’s commitment to learning movement flight safely and responsibly.
+It represents a flyer’s commitment to learning movement flight safely and responsibly, under the direct guidance of a qualified leader.
 
-A Solo flyer understands that movement requires planning, discipline, and mentorship.
+A Follow flyer understands that movement requires planning, discipline, and mentorship.
 
-They can participate in appropriately supervised movement training, follow a flight plan, maintain an assigned heading, and deploy safely in the intended area.
+They can participate in a movement jump with one qualified leader, understand and fly the leader’s plan, maintain the planned heading and a safe position relative to the leader, break off as briefed, and deploy safely in the intended area.
 
-Solo represents the beginning of personal responsibility for movement flight.
+Follow represents the beginning of personal responsibility for movement flight.
 
 ## Core Development Goal
 
-Develop personal responsibility for movement flight.
+Develop personal responsibility for movement flight while following a qualified leader.
 
 ## This Level Is About
 
-- Planning
+- Understanding the plan
 - Discipline
 - Awareness
 - Flight control
+- Following
 - Safety
 - Mentorship
 - Learning
@@ -1617,17 +1657,28 @@ Develop personal responsibility for movement flight.
 - Leadership
 - Coaching
 - Group management
+- Solo movement jumps
 
 ## Responsibility
 
-Manage yourself.
+Manage yourself while following a leader.
+
+A Follow flyer is responsible for their own flight within the leader’s plan: understanding the plan before exit, flying it predictably, and separating and deploying safely.
+
+The leader is responsible for the plan. The follower is responsible for their part in it.
 
 ## Prerequisites
 
 ### Required
 
-- USPA A License
-- 25 jumps
+- USPA B License, or an equivalent license from another national system
+
+### Required Equipment
+
+The following equipment is required at this level and at every subsequent level:
+
+- Audible altimeter
+- Freefly-friendly rig
 
 ### Future Consideration
 
@@ -1644,35 +1695,41 @@ The candidate must understand:
 - Heading selection
 - Flight planning
 - Opening area awareness
+- The role of the leader and the responsibilities of a follower
+- Safe positioning relative to the leader
+- Breakoff and separation fundamentals
 - Basic debrief process
 - Plan modification and abandonment
-- Appropriate use of alternate plans when necessary
+- Briefed alternate plans, including what to do when separated from the leader
+- Movement equipment requirements, including what makes a rig freefly-friendly: closed pin, secured handles and bridle, and no exposed flaps or loose components
 
 ## Skills
 
 ### Heading Skills
 
-#### SOLO-HDG-001
+#### FOLLOW-HDG-001
 
-Determine the correct heading while planning the jump.
+Understand and confirm the planned heading before exit.
 
 ##### Student Explanation
 
 Movement flight begins with planning.
 
+The leader selects the heading. A follower who does not understand it cannot fly it safely or recognize when something has gone wrong.
+
 Selecting the wrong heading can create separation conflicts, deployment conflicts, and collision risks.
 
-Safe movement flight requires understanding where the group should travel relative to jump run.
+Safe movement flight requires understanding where the jump should travel relative to jump run and the drift zone.
 
 ##### Evaluator Guidance
 
-The candidate should be able to independently determine the correct heading and explain the reasoning behind the decision.
+The candidate should be able to explain the planned heading and the reasoning behind it, relative to jump run and the drift zone.
 
 The evaluator should assess understanding rather than memorized answers.
 
 Duplication Audit: 🟢 New
 
-#### SOLO-HDG-002
+#### FOLLOW-HDG-002
 
 Identify and establish the planned heading after exit.
 
@@ -1680,7 +1737,7 @@ Identify and establish the planned heading after exit.
 
 Knowing the correct heading is insufficient.
 
-The flyer must also be able to acquire that heading after exit.
+The flyer must also be able to acquire that heading after exit, without relying entirely on the leader to find it.
 
 ##### Evaluator Guidance
 
@@ -1688,7 +1745,7 @@ The candidate should demonstrate the ability to orient correctly after exit and 
 
 Duplication Audit: 🟢 New
 
-#### SOLO-HDG-003
+#### FOLLOW-HDG-003
 
 Maintain the planned heading throughout the jump.
 
@@ -1703,6 +1760,8 @@ The evaluator should observe whether the candidate can remain on the intended he
 Minor corrections may occur.
 
 Large heading deviations should be investigated.
+
+Absence of meaningful forward movement should also be investigated.
 
 Duplication Audit: 🟢 New
 
@@ -1722,9 +1781,11 @@ This progression can be summarized as:
 
 Plan → Acquire → Maintain
 
+At Follow, the leader determines the heading and the follower must understand it. Determining a heading independently is first required at Lead 1.
+
 ### Flight Skills
 
-#### SOLO-FLT-001
+#### FOLLOW-FLT-001
 
 Stable exit.
 
@@ -1732,16 +1793,20 @@ Stable exit.
 
 Movement flight begins immediately after exit.
 
-A stable exit establishes predictability and control.
+A stable exit establishes predictability and control, and puts the follower where the leader expects them.
 
 ##### Evaluator Guidance
 
 The candidate should demonstrate controlled exits appropriate for introductory movement flight.
 
+Any exit style is acceptable, including belly, track, or freestyle exits, provided it is controlled and transitions promptly to the planned flight.
+
+The candidate should exit in the briefed order and with the briefed timing relative to the leader.
+
 Duplication Audit: 🟢 New
 
 
-#### SOLO-FLT-002
+#### FOLLOW-FLT-002
 
 Stable belly tracking position.
 
@@ -1749,14 +1814,16 @@ Stable belly tracking position.
 
 A stable tracking position provides predictable movement and control.
 
+Control of glide path, not only body position, allows the follower to match the leader.
+
 ##### Evaluator Guidance
 
-The candidate should demonstrate consistent body position and control.
+The candidate should demonstrate consistent body position and control, including control of glide path.
 
 Duplication Audit: 🟢 New
 
 
-#### SOLO-FLT-003
+#### FOLLOW-FLT-003
 
 Follow the planned line of flight.
 
@@ -1766,6 +1833,10 @@ Movement should follow planning.
 
 Improvisation should not replace flight discipline.
 
+A follower who leaves the plan forces the leader to choose between the follower and the plan.
+
+When the leader deliberately changes the plan in the air, follow the leader. Do not improvise a change of your own.
+
 ##### Evaluator Guidance
 
 Observe whether the candidate remains committed to the planned flight path.
@@ -1773,26 +1844,72 @@ Observe whether the candidate remains committed to the planned flight path.
 Duplication Audit: 🟢 New
 
 
-#### SOLO-FLT-004
+#### FOLLOW-FLT-004
 
-Deploy in the intended area.
+Break off as briefed.
 
 ##### Student Explanation
 
-Deployment location is a critical safety outcome.
+Breakoff is where a follower takes back full responsibility for their own separation.
+
+It begins at the briefed altitude, whether or not the leader has signaled.
+
+##### Evaluator Guidance
+
+- Begins breakoff at the briefed altitude, or earlier if the flyer reaches it first.
+- Turns to the briefed breakoff direction and maintains it.
+- Does not reverse direction relative to the line of flight.
+- Maintains speed through separation and does not slow significantly until clear of the leader.
+- Demonstrates awareness of the leader during separation.
+
+Duplication Audit: 🟢 New
+
+
+#### FOLLOW-FLT-005
+
+Deploy in the intended area at the intended altitude.
+
+##### Student Explanation
+
+Deployment location and altitude are critical safety outcomes.
 
 Movement planning should result in safe deployment locations.
 
 ##### Evaluator Guidance
 
-Observe deployment awareness, planning, and execution.
+Observe deployment awareness, planning, and execution, including whether deployment occurs at the planned altitude.
+
+Duplication Audit: 🟢 New
+
+
+### Following Skills
+
+#### FOLLOW-FLW-001
+
+Maintain a safe and predictable position relative to the leader.
+
+##### Student Explanation
+
+A follower’s position is part of the leader’s plan.
+
+Staying where the leader expects you, at a safe distance and clear of the leader’s path, allows the leader to manage the jump.
+
+A precise slot is not required at this level. Controlled, visible, and predictable flight is.
+
+##### Evaluator Guidance
+
+- Maintains awareness of the leader throughout the jump.
+- Stays within the briefed area relative to the leader.
+- Avoids approaching directly from behind or above the leader.
+- Does not cross the leader’s line of flight or pass significantly ahead of the leader.
+- Responds predictably when position is lost, without unsafe pursuit.
 
 Duplication Audit: 🟢 New
 
 
 ### Learning Skills
 
-#### SOLO-LRN-001
+#### FOLLOW-LRN-001
 
 Participate in a meaningful debrief.
 
@@ -1802,28 +1919,30 @@ Learning accelerates when performance is reviewed and discussed.
 
 ##### Evaluator Guidance
 
-The candidate should demonstrate willingness to engage in debrief discussion and apply feedback.
+The candidate should demonstrate willingness to engage in debrief discussion and apply feedback, including feedback from the leader.
 
 Duplication Audit: 🟢 New
 
 
 ### Risk Management Skills
 
-#### SOLO-RSK-001
+#### FOLLOW-RSK-001
 
-Recognize when a planned movement jump is no longer appropriate and modify or abandon the plan.
+Recognize when a planned movement jump is no longer appropriate, and raise it with the leader or withdraw from the jump.
 
 ##### Student Explanation
 
 Planning does not end when the jump is planned.
 
-Conditions may change between planning and execution. A Solo flyer remains responsible for determining whether a planned movement jump is appropriate at the time of exit.
+Conditions may change between planning and execution. A Follow flyer shares responsibility for recognizing when a planned movement jump is no longer appropriate, and for raising it with the leader before exit.
+
+In the air, a follower who loses the leader or judges the jump unsafe stops following, flies the briefed alternate plan, and separates safely.
 
 Changing or abandoning a plan is not failure. Continuing with an inappropriate plan is failure.
 
 ##### Evaluator Guidance
 
-The candidate should demonstrate understanding of situations that may require plan modification or abandonment and appropriate use of alternate plans.
+The candidate should demonstrate understanding of situations that may require plan modification or abandonment, and willingness to raise concerns with the leader or withdraw from the jump.
 
 Duplication Audit: 🟢 New
 
@@ -1833,25 +1952,29 @@ Certification requires:
 
 - Demonstration of required knowledge.
 - Demonstration of required skills.
-- Demonstration of safe deployment decisions.
+- Predictable flight relative to the leader throughout the jump.
+- Safe breakoff and deployment decisions.
 - Sign-off by a qualified Evaluator or Examiner.
+
+Evidence should show the full flight path from exit through deployment. Video recorded by the leader is the preferred evidence.
 
 Certification decisions should be evidence-based.
 
 ## Privileges
 
-A Solo flyer may:
+A Follow flyer may:
 
-- Conduct solo belly-tracking jumps.
+- Participate in movement jumps with one leader holding Lead 1 certification or higher.
 - Participate in appropriately supervised movement training.
 - Participate in coached movement jumps appropriate to skill level.
 - Pursue Group certification.
 
 ## Restrictions
 
-A Solo flyer may not:
+A Follow flyer may not:
 
-- Participate in movement groups.
+- Conduct solo movement jumps.
+- Participate in movement jumps involving more than one leader and one follower.
 - Lead movement jumps.
 - Evaluate other flyers.
 - Sign off progression requirements.
@@ -1866,13 +1989,14 @@ Eligible to pursue:
 
 ## Duplication Audit
 
-Unique competencies introduced at Solo:
+Unique competencies introduced at Follow:
 
-- Heading planning
+- Heading understanding
 - Heading acquisition
 - Heading maintenance
-- Solo movement planning
-- Solo movement execution
+- Position relative to a leader
+- Breakoff from a leader
+- Movement execution within a leader’s plan
 - Debrief participation
 
 
@@ -1888,7 +2012,7 @@ Predictable Participation
 
 ## Intent Statement
 
-Group represents the transition from individual movement operations to participation within a coordinated movement group.
+Group represents the transition from following a single leader to participation within a coordinated movement group.
 
 A Group flyer understands that their actions affect the safety and success of other participants. They can safely approach a formation, establish an assigned slot, maintain position, and contribute to group safety through disciplined and predictable behavior.
 
@@ -1923,13 +2047,13 @@ Manage your position within a group.
 
 A Group flyer is responsible for maintaining predictable behavior, following the established flight plan, and contributing to group safety through disciplined participation.
 
-Unlike Solo, the candidate's actions now directly affect other participants.
+Unlike Follow, the candidate now flies with participants other than the leader, and their actions directly affect those participants.
 
 ## Prerequisites
 
 Required
 
-- Solo Certification
+- Follow Certification
 
 ## Knowledge
 
@@ -2083,7 +2207,7 @@ Passing the leader creates unnecessary unpredictability and may compromise the s
 
 Remains behind the leader and maintains appropriate positional discipline.
 
-Duplication Audit: 🟢 New
+Duplication Audit: 🔵 Expanded from Follow
 
 ### Group Awareness Skills
 
@@ -2119,7 +2243,7 @@ Loss of position does not remove responsibility.
 - Continues following established procedures.
 - Executes standard breakoff procedures.
 
-Duplication Audit: 🟢 New
+Duplication Audit: 🔵 Expanded from Follow
 
 ### Breakoff Skills
 
@@ -2139,7 +2263,7 @@ Breakoff is a coordinated group activity.
 - Does not reverse direction relative to the line of flight.
 - Demonstrates awareness of nearby participants.
 
-Duplication Audit: 🔵 Expanded from Solo
+Duplication Audit: 🔵 Expanded from Follow
 
 ## Evaluation Criteria
 
@@ -2175,6 +2299,7 @@ A Group flyer may not:
 - Evaluate other flyers.
 - Sign off progression requirements.
 - Introduce back flying or back tracking on a movement jump.
+- Conduct solo movement jumps.
 
 ## Advancement Path
 
@@ -2191,6 +2316,9 @@ Eligible to pursue:
 - Heading maintenance.
 - Flight path discipline.
 - Deployment planning.
+- Leader-relative positioning.
+- Breakoff execution.
+- Out-of-position procedures.
 
 ### New Competencies
 
@@ -2199,10 +2327,8 @@ Eligible to pursue:
 - Separation management within a formation.
 - Quadrant discipline.
 - Center-line discipline.
-- Leader-relative positioning.
 - Group awareness.
 - Position-loss recognition.
-- Out-of-position procedures.
 - Progressive breakoff participation.
 - Predictable group participation.
 
@@ -2283,6 +2409,8 @@ Develop the ability to safely plan, organize, lead, adapt, and debrief movement 
 ## Responsibility
 
 Manage one other flyer.
+
+A Lead 1 flyer is also responsible for planning and conducting their own solo movement jumps.
 
 ## Prerequisites
 
@@ -2475,7 +2603,7 @@ Safe leaders consider the entire jump, including deployment and canopy considera
 
 The candidate should demonstrate the ability to incorporate deployment and separation planning into the overall jump plan.
 
-Duplication Audit: 🔵 Expanded from Solo
+Duplication Audit: 🔵 Expanded from Follow
 
 ### Briefing Skills
 
@@ -2610,6 +2738,7 @@ Leadership includes the willingness to have uncomfortable conversations when saf
 - Lead movement jumps involving one follower.
 - Debrief movement jumps involving one follower.
 - Modify or abandon planned jumps when conditions require.
+- Conduct solo belly-tracking jumps.
 - Pursue Lead 2 certification.
 
 ## Restrictions
@@ -2823,7 +2952,7 @@ Abrupt changes increase workload for followers and may reduce formation predicta
 
 The evaluator should assess smoothness, consistency, and control rather than magnitude of speed change.
 
-Duplication Audit: 🔵 Expanded from Solo and Lead 1
+Duplication Audit: 🔵 Expanded from Follow and Lead 1
 
 #### LEAD2-FRM-004
 
@@ -2837,7 +2966,7 @@ Pitch changes should support formation objectives while maintaining predictabili
 
 The evaluator should assess whether pitch changes are deliberate, controlled, and appropriate for the formation.
 
-Duplication Audit: 🔵 Expanded from Solo and Lead 1
+Duplication Audit: 🔵 Expanded from Follow and Lead 1
 
 #### LEAD2-COM-001
 
@@ -4865,7 +4994,7 @@ An Evaluator may:
 
 - Evaluate candidates against published standards
 - Issue Ready and Not Yet outcomes
-- Certify competency at Solo, Group, Lead 1, Lead 2, Lead 3 and Lead 4
+- Certify competency at Follow, Group, Lead 1, Lead 2, Lead 3 and Lead 4
 - Sign off progression requirements at those levels
 - Provide official developmental feedback
 - Recommend individuals for Evaluator development
@@ -5453,7 +5582,7 @@ A level is a defined stage within the progression system.
 
 Examples include:
 
-- Solo
+- Follow
 - Group
 - Lead 1
 - Evaluator
@@ -5739,6 +5868,7 @@ The purpose is to preserve program history and decision traceability.
 | 0.12 | Restructured the Evaluator level to full Level Architecture compliance: all sections nested under the level, all 27 skills consolidated under a single Skills section organized by domain, competency exemplar skills relocated to matching domains, and Knowledge, Development Theme, Prerequisites, Duplication Audit, and Defining Question sections added. Removed the redundant Evaluator Status Summary. Authored and integrated the complete Examiner operational definition: Intent Statement, Responsibility, Prerequisites, Selection with founding appointment clause, Authority, Knowledge, ten fully layered EXAM skills, Evaluation Criteria, Privileges, Restrictions, terminal Advancement Path, Duplication Audit, and Defining Question. Development Theme: Institutional Stewardship. Updated the Current Program Status, Appendix J, and Appendix K to reflect a fully defined progression from Solo through Examiner. |
 | 1.0 | Authored and integrated the Student Explanation and Evaluator Guidance layers for all remaining Evaluator domain skills, completing three-layer requirement coverage for every skill in the specification. Consolidated EVAL-OBS-003 into EVAL-OBS-001 (duplicate requirements); the retired identifier will not be reassigned. Relocated domain-level Primary Failures blocks from within skill blocks to their category introductions for correct attribution. Added assessor-directed guidance to the six Evaluator competency exemplar skills, preserving their original self-check guidance. Completed Duplication Audit classification coverage for all skills, including the previously untagged Solo flight and learning skills. With every level defined and every requirement fully layered, this release constitutes the complete operational baseline defined by the Versioning Philosophy. |
 | 1.1 | Documented the sixteen requirement categories in use but absent from the registry, added a First Used column, and retired the unused KNW and EVL codes. Ratified CDD-003 as DD-027 (Safety-Critical Requirement Classification), establishing the Safety Critical and Standard classifications, promoting the classification to required metadata, and recording that classification affects the consequence of a Not Yet outcome rather than whether a requirement must be met. Added DD-028 (Direct Appointment To The EE Tier), replacing the founding-only appointment clause with a permanent documented appointment path and adding it to the Evaluator and Examiner prerequisites. Corrected the Lead 1 restriction to include back tracking, matching Solo, Group, and Lead 2. Granted angle jump participation at Group, resolving a restriction that was introduced at Solo and never lifted. Replaced the undefined phrase "within authorized levels" in the Evaluator privileges and restrictions with the explicit level list the Evaluation Criteria already determine. Retitled the duplicate Lead 4 Privilege heading to Defining Privilege. Expanded the EE abbreviation in Part I and added an EE Tier terminology entry. |
+| 1.2 | Added DD-029 (Follow Replaces Solo As The Entry Level) following the first round of expert review. Retired the Solo level and its skill identifiers (SOLO-HDG-001 through SOLO-RSK-001) and introduced Follow, in which a flyer's first movement jumps are made with one leader holding Lead 1 certification or higher. Re-authored the entry-level skills as FOLLOW identifiers demonstrated while following, incorporating reviewer refinements to exit style, glide-path control, heading relative to the drift zone, absence of forward movement, and deployment altitude. Added FOLLOW-FLT-004 (breakoff) and FOLLOW-FLW-001 (position relative to the leader), introducing the FLW Following Skills category. Replaced the USPA A License and 25-jump prerequisite with the USPA B License or an equivalent, and added required equipment (audible altimeter, freefly-friendly rig) that applies at every subsequent level. Moved solo movement jumps to a Lead 1 privilege and extended the Lead 1 responsibility statement, and added solo movement jumps to the Group restrictions. |
 
 # Current Program Status
 
@@ -5747,7 +5877,7 @@ Implemented:
 - Constitutional Layer (including Implementation Discoveries)
 - Design Decision Register
 - Specification Architecture
-- Solo (Operationally Complete)
+- Follow (Operationally Complete)
 - Group (Operationally Complete)
 - Lead 1 (Operationally Complete)
 - Lead 2 (Operationally Complete)
@@ -5756,7 +5886,7 @@ Implemented:
 - Evaluator (Operationally Complete)
 - Examiner (Operationally Complete)
 
-Every level of the progression is fully defined and fully layered, from Solo through Examiner.
+Every level of the progression is fully defined and fully layered, from Follow through Examiner.
 
 The program should be considered architecturally closed and operationally complete. Future development should focus on external expert review, operational validation, and derivative materials rather than new architectural concepts.
 
@@ -5784,7 +5914,7 @@ Skills exist as evidence of readiness for that responsibility.
 
 | Level | Primary Responsibility |
 | --- | --- |
-| Solo | Manage yourself |
+| Follow | Manage yourself while following a leader |
 | Group | Manage your position within a group |
 | Lead 1 | Manage one other flyer |
 | Lead 2 | Manage a formation |
@@ -5809,8 +5939,8 @@ The Responsibility Transition Model describes the major developmental transition
 
 | Transition | Responsibility Accepted |
 | --- | --- |
-| Non-Solo → Solo | Safe personal movement operations |
-| Solo → Group | Safe participation within a movement group |
+| Non-Follow → Follow | Safe personal flight on a led movement jump |
+| Follow → Group | Safe participation within a movement group |
 | Group → Leader Tier | Safety and management of other flyers |
 | Leader Tier → EE Tier | Development of people and protection of standards |
 
@@ -5951,7 +6081,7 @@ LEVEL-CATEGORY-NUMBER
 
 Examples:
 
-SOLO-HDG-001
+FOLLOW-HDG-001
 GROUP-SLT-001
 LEAD1-LDR-001
 EVAL-OBS-001
@@ -5960,10 +6090,11 @@ EVAL-OBS-001
 
 | Code | Meaning | First Used |
 | --- | --- | --- |
-| HDG | Heading Skills | Solo |
-| FLT | Flight Skills | Solo |
-| LRN | Learning Skills | Solo |
-| RSK | Risk Management Skills | Solo |
+| HDG | Heading Skills | Follow |
+| FLT | Flight Skills | Follow |
+| FLW | Following Skills | Follow |
+| LRN | Learning Skills | Follow |
+| RSK | Risk Management Skills | Follow |
 | SLT | Slot Skills | Group |
 | OBS | Observation Skills | Group |
 | PLN | Planning Skills | Lead 1 |
@@ -6119,7 +6250,7 @@ Items listed here are not yet standards.
 
 Status: Complete
 
-Solo and Group are fully defined. Remaining Flyer Tier work is refinement based on operational experience rather than new definition.
+Follow and Group are fully defined. Remaining Flyer Tier work is refinement based on operational experience rather than new definition.
 
 ## Leader Tier
 
@@ -6158,7 +6289,7 @@ Future review required:
 | Design Decision Register | Complete |
 | Governance Model | Complete |
 | Evaluation Model | Complete |
-| Solo | Complete |
+| Follow | Complete |
 | Group | Complete |
 | Lead 1–4 | Complete |
 | Evaluator | Complete |
@@ -6174,7 +6305,7 @@ No remaining definition work.
 
 The program architecture is closed.
 
-Every level is defined: Solo, Group, Lead 1 through Lead 4, Evaluator, and Examiner. The specification defines an unbroken developmental progression from first movement jump through terminal stewardship of the program itself.
+Every level is defined: Follow, Group, Lead 1 through Lead 4, Evaluator, and Examiner. The specification defines an unbroken developmental progression from first movement jump through terminal stewardship of the program itself.
 
 The primary remaining work is external expert review, operational validation, and the development of derivative materials.
 
